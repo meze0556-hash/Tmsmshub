@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMSMSHub.com — Verify Any Account in Seconds | By TM True Exchange</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <style>
+    :root{--bg-black:#060607;--bg-surface:#0e0e11;--bg-card:#131317;--bg-card-hover:#19191f;--gold-100:#fff3c4;--gold-300:#f6d365;--gold-400:#e5b842;--gold-500:#d4af37;--gold-gradient:linear-gradient(135deg,#fce38a 0%,#d4af37 50%,#a67c00 100%);--gold-border:rgba(212,175,55,0.25);--gold-border-strong:rgba(212,175,55,0.55);--text-primary:#f7f7f8;--text-secondary:#a1a1aa;--text-muted:#71717a;--green:#22c55e;--green-bg:rgba(34,197,94,0.12);--green-border:rgba(34,197,94,0.4);--red:#ef4444;--red-bg:rgba(239,68,68,0.12);--red-border:rgba(239,68,68,0.45);--radius-md:16px;--radius-lg:22px;--shadow-gold:0 10px 35px -10px rgba(212,175,55,0.35)}
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
+    body{font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background-color:var(--bg-black);color:var(--text-primary);line-height:1.5;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column;padding-bottom:36px;background-image:radial-gradient(circle at 50% -10%,rgba(212,175,55,0.16),transparent 45%),radial-gradient(circle at 90% 25%,rgba(212,175,55,0.06),transparent 35%),radial-gradient(circle at 10% 70%,rgba(212,175,55,0.05),transparent 35%)}
+    main{flex:1} a{color:inherit;text-decoration:none} button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+    .container{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+    .gold-text{background:var(--gold-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold-gradient);color:#09090b;font-weight:700;border-radius:12px;padding:11px 20px;font-size:0.92rem;box-shadow:var(--shadow-gold);transition:transform 0.18s ease,filter 0.18s ease}
+    .btn-gold:hover{transform:translateY(-2px);filter:brightness(1.06)} .btn-gold:disabled{opacity:0.55;cursor:not-allowed;transform:none}
+    .btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:rgba(212,175,55,0.06);color:var(--gold-300);border:1px solid var(--gold-border-strong);font-weight:600;border-radius:12px;padding:11px 20px;font-size:0.92rem;transition:background 0.18s ease,transform 0.18s ease}
+    .btn-outline:hover{background:rgba(212,175,55,0.14);transform:translateY(-2px)}
+    .btn-danger-outline{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--red-bg);color:#fca5a5;border:1px solid var(--red-border);font-weight:700;border-radius:10px;padding:7px 12px;font-size:0.8rem}
+    .btn-green-outline{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--green-bg);color:#86efac;border:1px solid var(--green-border);font-weight:700;border-radius:10px;padding:7px 11px;font-size:0.78rem}
+    .btn-out-stock{padding:7px 13px;border-radius:9px;font-size:0.8rem;font-weight:700;background:#27272a;color:#a1a1aa;border:1px solid #3f3f46;cursor:not-allowed;white-space:nowrap}
+    .btn-sm{padding:6px 11px;font-size:0.78rem;border-radius:8px}
+    .header{position:sticky;top:0;z-index:50;background:rgba(6,6,7,0.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--gold-border)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;min-height:72px;padding:10px 0;gap:10px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px;cursor:pointer}
+    .tm-logo{width:42px;height:42px;border-radius:11px;background:linear-gradient(145deg,#1b170b,#0c0a05);border:1.5px solid var(--gold-500);display:flex;align-items:center;justify-content:center;box-shadow:0 0 18px rgba(212,175,55,0.28);flex-shrink:0}
+    .brand-name{font-weight:800;font-size:1.1rem;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
+    .header-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .lang-btn,.hamburger-btn{height:40px;padding:0 12px;border-radius:10px;background:var(--bg-card);border:1px solid var(--gold-border);color:var(--gold-300);font-size:0.82rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;position:relative}
+    .balance-pill{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:10px;background:rgba(212,175,55,0.09);border:1px solid var(--gold-border-strong);color:var(--gold-100);font-size:0.84rem;font-weight:700;font-family:'JetBrains Mono',monospace;cursor:pointer}
+    .signin-btn{padding:9px 15px;border-radius:10px;font-size:0.86rem}
+    .bell-badge{position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;border-radius:999px;background:var(--red);color:#fff;font-size:0.68rem;font-weight:800;display:none;align-items:center;justify-content:center;padding:0 4px}
+    .drawer-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.72);z-index:80;display:none} .drawer-overlay.open{display:block}
+    .drawer{position:fixed;top:0;right:0;width:300px;max-width:86vw;height:100vh;background:#0c0c0f;border-left:1px solid var(--gold-border);z-index:90;padding:24px 20px;transform:translateX(100%);transition:transform 0.25s ease;display:flex;flex-direction:column;gap:16px;overflow-y:auto}
+    .drawer.open{transform:translateX(0)}
+    .drawer-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:14px;border-bottom:1px solid var(--gold-border)}
+    .drawer-user-box{background:rgba(212,175,55,0.08);border:1px solid var(--gold-border);border-radius:12px;padding:12px 14px;font-size:0.84rem;cursor:pointer}
+    .drawer-nav{display:flex;flex-direction:column;gap:8px}
+    .drawer-link{padding:11px 14px;border-radius:10px;background:var(--bg-card);border:1px solid transparent;font-weight:600;font-size:0.93rem;display:flex;align-items:center;justify-content:space-between;text-align:left;width:100%}
+    .drawer-link:hover{border-color:var(--gold-border);color:var(--gold-300)}
+    .page-view{display:none} .page-view.active{display:block}
+    .page-banner{padding:34px 0 20px;border-bottom:1px solid rgba(212,175,55,0.14);margin-bottom:26px}
+    .page-banner-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+    .hero{padding:52px 0 32px;text-align:center}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(212,175,55,0.1);border:1px solid var(--gold-border);color:var(--gold-300);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:18px}
+    .hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--gold-400);box-shadow:0 0 8px var(--gold-400)}
+    .hero h1{font-size:clamp(2.15rem,6vw,3.85rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;max-width:780px;margin:0 auto 16px}
+    .hero p{color:var(--text-secondary);font-size:clamp(1rem,2.5vw,1.18rem);max-width:590px;margin:0 auto 28px}
+    .hero-buttons{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px}
+    .services-section{padding:20px 0 26px} .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service-card{background:linear-gradient(165deg,#16161b 0%,#0d0d10 100%);border:1px solid var(--gold-border);border-radius:var(--radius-md);padding:24px 20px;text-align:center;position:relative;overflow:hidden;transition:transform 0.2s ease,border-color 0.2s ease}
+    .service-card::before{content:"";position:absolute;top:0;left:20%;right:20%;height:2px;background:var(--gold-gradient);opacity:0.65}
+    .service-card:hover{transform:translateY(-3px);border-color:var(--gold-500)}
+    .service-icon{width:48px;height:48px;margin:0 auto 14px;border-radius:12px;background:rgba(212,175,55,0.12);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+    .service-card h3{font-size:1.05rem;font-weight:800;letter-spacing:0.1em;color:var(--gold-300);margin-bottom:6px}
+    .service-card p{font-size:0.85rem;color:var(--text-secondary)}
+    .stats-bar{margin-top:22px;background:var(--bg-surface);border:1px solid var(--gold-border);border-radius:var(--radius-md);padding:18px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}
+    .stat-item{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+    .stat-item:not(:last-child)::after{content:"";position:absolute;right:-8px;top:15%;height:70%;width:1px;background:var(--gold-border)}
+    .stat-value{font-size:1.25rem;font-weight:800} .stat-label{font-size:0.8rem;color:var(--text-secondary);margin-top:2px}
+    .section-block{padding:44px 0;border-top:1px solid rgba(212,175,55,0.14)}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:20px}
+    .section-kicker{font-size:0.76rem;font-weight:800;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold-400);margin-bottom:6px}
+    .section-title{font-size:clamp(1.45rem,3.5vw,2rem);font-weight:800;letter-spacing:-0.02em}
+    .search-wrap{position:relative;margin-bottom:18px}
+    .search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--gold-400);pointer-events:none}
+    .search-input,.input-box,.select-box,.textarea-box{width:100%;background:var(--bg-card);border:1px solid var(--gold-border);border-radius:14px;padding:13px 16px;color:var(--text-primary);font-family:inherit;font-size:0.95rem;outline:none}
+    .search-input{padding-left:46px}
+    .search-input:focus,.input-box:focus,.select-box:focus,.textarea-box:focus{border-color:var(--gold-500);box-shadow:0 0 0 3px rgba(212,175,55,0.14)}
+    .apps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+    .app-card{background:var(--bg-card);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px;text-align:left;transition:transform 0.16s ease,border-color 0.16s ease}
+    .app-card:hover{transform:translateY(-2px);background:var(--bg-card-hover);border-color:var(--gold-border-strong)}
+    .app-card.active{background:rgba(212,175,55,0.1);border-color:var(--gold-500)}
+    .app-avatar{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.92rem;flex-shrink:0;color:#fff}
+    .app-meta{min-width:0} .app-name{font-weight:700;font-size:0.93rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .app-sub{font-size:0.74rem;color:var(--text-muted)}
+    .buy-filter-bar{display:flex;flex-direction:column;gap:12px;background:var(--bg-surface);border:1px solid var(--gold-border);border-radius:16px;padding:16px;margin-bottom:20px}
+    .app-filter-pills,.admin-tabs,.wallet-filter-pills{display:flex;flex-wrap:wrap;gap:8px}
+    .app-filter-btn,.admin-tab-btn,.wf-btn{padding:8px 14px;border-radius:999px;font-size:0.83rem;font-weight:700;background:var(--bg-card);border:1px solid var(--gold-border);color:var(--text-secondary)}
+    .app-filter-btn.active,.admin-tab-btn.active,.wf-btn.active{background:var(--gold-gradient);color:#09090b;border-color:transparent}
+    .promo-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-top:8px;border-top:1px solid rgba(212,175,55,0.14)}
+    .country-select-inline{min-width:200px;background:var(--bg-card);border:1px solid var(--gold-border-strong);border-radius:10px;padding:9px 12px;color:var(--text-primary);font-family:inherit;font-size:0.88rem;font-weight:600;outline:none}
+    .filter-pills{display:inline-flex;background:var(--bg-card);border:1px solid var(--gold-border);border-radius:12px;padding:4px;gap:4px}
+    .filter-pill{padding:8px 14px;border-radius:9px;font-size:0.84rem;font-weight:700;color:var(--text-secondary)} .filter-pill.active{background:var(--gold-gradient);color:#09090b}
+    .country-flag{font-size:1.65rem;line-height:1}
+    .country-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px}
+    .country-row{background:var(--bg-card);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:15px 16px;display:flex;flex-direction:column;gap:10px;transition:border-color 0.16s ease,transform 0.16s ease}
+    .country-row:hover{border-color:var(--gold-border-strong);transform:translateY(-2px)}
+    .country-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .country-info{display:flex;align-items:center;gap:10px}
+    .country-name{font-weight:700;font-size:0.97rem;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+    .rating-tag{font-size:0.74rem;font-weight:700;color:var(--gold-300);background:rgba(212,175,55,0.1);border:1px solid var(--gold-border);padding:2px 7px;border-radius:6px;white-space:nowrap}
+    .fav-btn{width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);color:var(--text-muted);font-size:0.95rem;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+    .fav-btn.active{background:rgba(212,175,55,0.18);border-color:var(--gold-500);color:#facc15}
+    .country-price{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:0.9rem;color:var(--gold-300);background:rgba(212,175,55,0.1);border:1px solid var(--gold-border);padding:4px 10px;border-radius:8px;white-space:nowrap}
+    .country-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .stock-tag{font-size:0.75rem;font-weight:700;padding:3px 8px;border-radius:7px;white-space:nowrap}
+    .stock-ok{background:var(--green-bg);color:#4ade80;border:1px solid var(--green-border)} .stock-low{background:rgba(212,175,55,0.12);color:var(--gold-300);border:1px solid var(--gold-border)} .stock-zero{background:var(--red-bg);color:#fca5a5;border:1px solid var(--red-border)}
+    .get-num-btn{padding:7px 13px;border-radius:9px;font-size:0.8rem;font-weight:700;background:var(--gold-gradient);color:#09090b;white-space:nowrap}
+    .selected-service-chip{display:inline-flex;align-items:center;gap:8px;font-size:0.82rem;font-weight:600;color:var(--text-secondary);margin-top:6px;flex-wrap:wrap}
+    .selected-service-chip strong{color:var(--gold-300)}
+
+    .auth-container{max-width:460px;margin:48px auto;background:linear-gradient(160deg,#15151b 0%,#0b0b0e 100%);border:1px solid var(--gold-border-strong);border-radius:var(--radius-lg);padding:30px 26px;box-shadow:0 24px 60px rgba(0,0,0,0.75)}
+    .auth-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--bg-black);border:1px solid var(--gold-border);border-radius:12px;padding:4px;margin-bottom:22px}
+    .auth-tab{padding:10px;border-radius:9px;font-weight:700;font-size:0.9rem;color:var(--text-secondary);text-align:center} .auth-tab.active{background:var(--gold-gradient);color:#09090b}
+    .form-group{margin-bottom:14px} .form-label{display:block;font-size:0.82rem;font-weight:700;color:var(--gold-300);margin-bottom:6px}
+    .alert-error{background:var(--red-bg);border:1px solid var(--red-border);color:#fca5a5;padding:10px 14px;border-radius:10px;font-size:0.85rem;font-weight:600;margin-bottom:14px;display:none}
+    .wallet-grid,.admin-settings-grid,.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
+    .admin-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:26px}
+    .panel-card{background:linear-gradient(160deg,#15151a 0%,#0d0d10 100%);border:1px solid var(--gold-border);border-radius:var(--radius-md);padding:22px}
+    .wallet-balance-big{font-family:'JetBrains Mono',monospace;font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;margin:6px 0 14px}
+    .admin-stat-num{font-family:'JetBrains Mono',monospace;font-size:clamp(1.4rem,2.6vw,1.95rem);font-weight:800;margin-top:6px}
+    .preset-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px}
+    .preset-chip{padding:7px 12px;border-radius:9px;background:var(--bg-card);border:1px solid var(--gold-border);font-size:0.82rem;font-weight:700;color:var(--gold-300)}
+    .bank-box{background:rgba(212,175,55,0.06);border:1px solid var(--gold-border);border-radius:12px;padding:14px 16px;margin-top:12px;font-size:0.88rem;display:flex;flex-direction:column;gap:8px}
+    .bank-row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+    .price-mini-input{width:105px;background:var(--bg-black);border:1px solid var(--gold-border);border-radius:9px;padding:7px 10px;color:var(--text-primary);font-family:'JetBrains Mono',monospace;font-size:0.86rem;outline:none}
+    .admin-tab-panel{display:none} .admin-tab-panel.active{display:block}
+    .code-box{background:linear-gradient(135deg,rgba(34,197,94,0.16),rgba(22,163,74,0.08));border:1.5px solid rgba(34,197,94,0.55);border-radius:14px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .code-text{font-family:'JetBrains Mono',monospace;font-size:clamp(1.05rem,3vw,1.35rem);font-weight:700;color:#4ade80;letter-spacing:0.06em}
+    .copy-mini{padding:7px 12px;border-radius:8px;background:rgba(34,197,94,0.18);border:1px solid rgba(34,197,94,0.45);color:#bbf7d0;font-size:0.78rem;font-weight:700}
+
+    .active-order-card{background:linear-gradient(145deg,#16161c 0%,#0b0b0e 100%);border:1.5px solid var(--gold-border-strong);border-radius:var(--radius-lg);padding:22px;margin-bottom:22px}
+    .order-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-bottom:16px;border-bottom:1px solid rgba(212,175,55,0.16);margin-bottom:16px}
+    .order-number-display{font-family:'JetBrains Mono',monospace;font-size:clamp(1.1rem,3vw,1.4rem);font-weight:700;color:var(--gold-100);margin-top:4px}
+    .timer-badge{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:0.96rem;color:var(--gold-300);background:rgba(212,175,55,0.12);border:1px solid var(--gold-border-strong);padding:6px 12px;border-radius:10px}
+    .order-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .sms-inbox-box{background:#0a0a0d;border:1px solid var(--gold-border);border-radius:14px;padding:16px 18px}
+    .sms-inbox-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+    .sms-waiting{padding:16px;border-radius:10px;border:1px dashed var(--gold-border);color:var(--text-secondary);font-size:0.88rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:700;color:var(--green);background:var(--green-bg);border:1px solid var(--green-border);padding:5px 11px;border-radius:999px}
+    .wait-pill{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:700;color:var(--gold-300);background:rgba(212,175,55,0.12);border:1px solid var(--gold-border-strong);padding:5px 11px;border-radius:999px}
+    .live-dot{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulse 1.6s infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.45;transform:scale(0.8)}}
+    .uk-tag{font-size:0.75rem;font-weight:700;padding:2px 8px;border-radius:6px;background:rgba(212,175,55,0.14);border:1px solid var(--gold-border);color:var(--gold-300)}
+
+    .table-wrap{width:100%;overflow-x:auto;background:var(--bg-card);border:1px solid var(--gold-border);border-radius:var(--radius-md)}
+    table{width:100%;border-collapse:collapse;min-width:600px;font-size:0.88rem}
+    th{text-align:left;padding:13px 16px;font-size:0.76rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold-300);background:rgba(212,175,55,0.08);border-bottom:1px solid var(--gold-border)}
+    td{padding:13px 16px;border-bottom:1px solid rgba(255,255,255,0.06);color:var(--text-primary)} tr:last-child td{border-bottom:none}
+    .status-badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:0.74rem;font-weight:700}
+    .status-completed{background:var(--green-bg);color:#4ade80;border:1px solid var(--green-border)}
+    .status-waiting{background:rgba(212,175,55,0.14);color:var(--gold-300);border:1px solid var(--gold-border-strong)}
+    .status-cancelled,.status-expired{background:var(--red-bg);color:#fca5a5;border:1px solid var(--red-border)}
+    .star-picker{display:flex;justify-content:center;gap:10px;margin:16px 0}
+    .star-pick-btn{font-size:2.1rem;color:#3f3f46} .star-pick-btn.lit{color:#facc15}
+
+    .footer{border-top:1px solid var(--gold-border);background:#050506;padding:32px 0 80px;margin-top:32px;user-select:none}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px}
+    .footer-brand{font-weight:700;font-size:0.96rem} .footer-sub{font-size:0.82rem;color:var(--text-muted);margin-top:2px}
+    .footer-links{display:flex;align-items:center;flex-wrap:wrap;gap:16px} .footer-link{font-size:0.84rem;font-weight:600;color:var(--gold-300)}
+    .footer-whatsapp{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:9px;background:rgba(37,211,102,0.12);border:1px solid rgba(37,211,102,0.4);color:#4ade80;font-size:0.82rem;font-weight:700}
+    .floating-wa-btn{position:fixed;bottom:20px;right:20px;z-index:95;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:#fff;font-weight:700;font-size:0.86rem;padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,0.28);box-shadow:0 12px 30px rgba(37,211,102,0.38)}
+    .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.78);backdrop-filter:blur(6px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+    .modal-backdrop.open{display:flex}
+    .modal{width:100%;max-width:460px;background:#101014;border:1px solid var(--gold-border-strong);border-radius:var(--radius-lg);padding:26px 24px;box-shadow:0 25px 60px rgba(0,0,0,0.85)}
+    .modal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+    .checkout-summary{background:var(--bg-card);border:1px solid var(--gold-border);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+    .checkout-row{display:flex;justify-content:space-between;align-items:center;font-size:0.92rem} .checkout-row span:first-child{color:var(--text-secondary)}
+    .toast{position:fixed;bottom:82px;right:20px;z-index:140;background:#15151a;border:1px solid var(--gold-500);color:var(--gold-100);padding:12px 18px;border-radius:12px;font-size:0.88rem;font-weight:700;box-shadow:0 15px 40px rgba(0,0,0,0.8);display:none;max-width:340px}
+    .toast.show{display:block} .toast.toast-green{background:#0b2615;border-color:#22c55e;color:#86efac}
+
+    @media (max-width:860px){.wallet-grid,.admin-settings-grid,.admin-stats-grid,.faq-grid{grid-template-columns:1fr}}
+    @media (max-width:768px){.cards-3,.stats-bar,.country-list{grid-template-columns:1fr}.stat-item:not(:last-child)::after{display:none}.stat-item:not(:last-child){padding-bottom:12px;border-bottom:1px solid var(--gold-border)}.brand-name{font-size:0.95rem}.signin-btn{padding:8px 12px;font-size:0.8rem}.balance-pill{padding:7px 10px;font-size:0.78rem}.floating-wa-btn{bottom:14px;right:14px;padding:10px 14px;font-size:0.8rem}}
+    @media (max-width:440px){.apps-grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand" onclick="navigateTo('home')">
+        <div class="tm-logo"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><defs><linearGradient id="tmGold" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FCE38A"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#A67C00"/></linearGradient></defs><path d="M4 8H15V11.5H11.3V24H7.7V11.5H4V8Z" fill="url(#tmGold)"/><path d="M16.5 24V8H20.3L23.5 16.4L26.7 8H30.5V24H27.1V14.3L24.5 21H22.5L19.9 14.3V24H16.5Z" fill="url(#tmGold)"/></svg></div>
+        <span class="brand-name gold-text">TM SMS HUB</span>
+      </div>
+      <div class="header-actions">
+        <button class="lang-btn" id="langBtn"><span id="langCode">EN</span></button>
+        <button class="btn-gold signin-btn" id="headerSignInBtn" onclick="openAuthPage('signin')">Sign in</button>
+        <button class="balance-pill" id="headerBalancePill" style="display:none;" onclick="navigateTo('wallet')">Balance: ₦<span id="headerBalanceValue">0</span></button>
+        <button class="btn-gold signin-btn" id="headerFundBtn" style="display:none;" onclick="navigateTo('wallet')">Fund Wallet</button>
+        <button class="hamburger-btn" id="menuOpenBtn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head"><span class="brand-name gold-text">TM SMS HUB</span><button class="hamburger-btn" id="menuCloseBtn">✕</button></div>
+    <div class="drawer-user-box" id="drawerUserBox" style="display:none;" onclick="closeDrawer();navigateTo('profile');">
+      <div style="color:var(--text-secondary);font-size:0.75rem;">Signed in as <strong id="drawerUserName" style="color:#fff;"></strong></div>
+      <div id="drawerUserEmail" style="font-weight:700;color:var(--gold-300);word-break:break-all;"></div>
+      <div style="margin-top:6px;font-family:'JetBrains Mono',monospace;font-weight:700;">Balance: <span class="gold-text">₦<span id="drawerBalanceValue">0</span></span></div>
+    </div>
+    <nav class="drawer-nav">
+      <button class="drawer-link" onclick="closeDrawer();navigateTo('home');">Home <span>→</span></button>
+      <button class="drawer-link" onclick="closeDrawer();navigateTo('home','numbers');">Numbers (Apps) <span>→</span></button>
+      <button class="drawer-link" onclick="closeDrawer();navigateTo('home','countries');">Buy Number &amp; Live Stock <span>→</span></button>
+      <button class="drawer-link" onclick="closeDrawer();navigateTo('my-numbers');">My Numbers <span id="drawerActiveCount" style="color:var(--gold-300);">→</span></button>
+      <button class="drawer-link" onclick="closeDrawer();navigateTo('wallet');">Wallet &amp; Referrals <span>₦</span></button>
+      <button class="drawer-link" onclick="closeDrawer();navigateTo('profile');">My Profile <span>👤</span></button>
+      <button class="drawer-link" onclick="closeDrawer();navigateTo('help');">Help &amp; FAQ <span>?</span></button>
+      <div id="drawerAuthOut" style="display:flex;flex-direction:column;gap:8px;margin-top:6px;">
+        <button class="drawer-link" onclick="closeDrawer();openAuthPage('signup');">Create free account <span>★</span></button>
+        <button class="drawer-link" onclick="closeDrawer();openAuthPage('signin');">Sign in <span>→</span></button>
+      </div>
+      <div id="drawerAuthIn" style="display:none;margin-top:6px;"><button class="drawer-link" style="color:#fca5a5;" onclick="closeDrawer();logoutUser();">Sign out <span>⎋</span></button></div>
+    </nav>
+    <div style="margin-top:auto;font-size:0.8rem;color:var(--text-muted);border-top:1px solid var(--gold-border);padding-top:14px;">TMSMSHub.com — By TM True Exchange</div>
+  </aside>
+
+  <main>
+    <div id="view-home" class="page-view active">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-badge"><span class="dot"></span>By TM True Exchange • Live 5sim Gateway</div>
+          <h1>Verify any account <span class="gold-text">in seconds.</span></h1>
+          <p>Real temporary phone numbers connected directly to 5sim to receive your verification codes</p>
+          <div class="hero-buttons">
+            <button class="btn-gold" onclick="openAuthPage('signup')">Create free account</button>
+            <a href="#countries" class="btn-outline">See live prices</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="cards-3">
+            <a href="#numbers" class="service-card"><div class="service-icon">📱</div><h3>NUMBERS</h3><p>Real virtual SMS numbers across 190+ countries powered by 5sim.</p></a>
+            <div class="service-card"><div class="service-icon">✉️</div><h3>EMAILS</h3><p>Disposable &amp; private inbox addresses to receive verification links.</p></div>
+            <div class="service-card"><div class="service-icon">🌐</div><h3>PROXIES</h3><p>Clean residential &amp; mobile IPs matched to your verification country.</p></div>
+          </div>
+          <div class="stats-bar">
+            <div class="stat-item"><div class="stat-value gold-text">100+ apps</div><div class="stat-label">Supported Platforms</div></div>
+            <div class="stat-item"><div class="stat-value gold-text">190+ countries</div><div class="stat-label">Global Coverage</div></div>
+            <div class="stat-item"><div class="stat-value gold-text">NGN local prices</div><div class="stat-label">Live 5sim Pricing</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="numbers">
+        <div class="container">
+          <div class="section-head">
+            <div><div class="section-kicker">Numbers Page</div><h2 class="section-title">Select an App or Service</h2></div>
+            <span style="font-size:0.85rem;color:var(--text-secondary);">Click any app to load live 5sim stock &amp; prices</span>
+          </div>
+          <div class="search-wrap"><span class="search-icon">🔍</span><input type="text" id="appSearch" class="search-input" placeholder="Search apps: WhatsApp, Telegram, Facebook, Gmail..." /></div>
+          <div class="apps-grid" id="appsGrid"></div>
+        </div>
+      </section>
+
+      <section class="section-block" id="countries">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Buy Number • Real 5sim Inventory</div>
+              <h2 class="section-title">Country, App, Live Stock &amp; NGN Price</h2>
+              <div class="selected-service-chip">Active Filter: <strong id="selectedFilterLabel">WhatsApp</strong> <button class="btn-outline btn-sm" onclick="loadLive5simPrices(true)">↻ Refresh Live Stock</button></div>
+            </div>
+            <div class="filter-pills">
+              <button class="filter-pill active" id="sortBestBtn" onclick="setSort('best')">Best stock</button>
+              <button class="filter-pill" id="sortAzBtn" onclick="setSort('az')">A-Z</button>
+            </div>
+          </div>
+
+          <div class="buy-filter-bar">
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+              <div class="search-wrap" style="flex:1;min-width:230px;margin-bottom:0;"><span class="search-icon">🔍</span><input type="text" id="buySearchInput" class="search-input" placeholder="Search country or app... e.g. USA, WhatsApp" oninput="refreshBuyPage()" /></div>
+              <select id="customerCountryPicker" class="country-select-inline" onchange="onCountryPickerChange(this.value)"></select>
+            </div>
+            <div class="app-filter-pills" id="buyAppFilterPills">
+              <button type="button" class="app-filter-btn" data-app="ALL" onclick="setBuyAppFilter('ALL')">All</button>
+              <button type="button" class="app-filter-btn" data-app="FAV" onclick="setBuyAppFilter('FAV')">⭐ My Favorites</button>
+              <button type="button" class="app-filter-btn" data-app="Facebook" onclick="setBuyAppFilter('Facebook')">Facebook</button>
+              <button type="button" class="app-filter-btn active" data-app="WhatsApp" onclick="setBuyAppFilter('WhatsApp')">WhatsApp</button>
+              <button type="button" class="app-filter-btn" data-app="Telegram" onclick="setBuyAppFilter('Telegram')">Telegram</button>
+              <button type="button" class="app-filter-btn" data-app="Gmail" onclick="setBuyAppFilter('Gmail')">Gmail</button>
+              <button type="button" class="app-filter-btn" data-app="Instagram" onclick="setBuyAppFilter('Instagram')">Instagram</button>
+              <button type="button" class="app-filter-btn" data-app="TikTok" onclick="setBuyAppFilter('TikTok')">TikTok</button>
+            </div>
+            <div class="promo-bar">
+              <span style="font-size:0.82rem;font-weight:700;color:var(--gold-300);">Promo Code:</span>
+              <input type="text" id="buyPromoInput" class="price-mini-input" style="width:150px;text-transform:uppercase;" placeholder="Enter promo" />
+              <button type="button" class="btn-outline btn-sm" onclick="applyBuyPromo()">Apply</button>
+              <button type="button" id="clearPromoBtn" class="btn-danger-outline btn-sm" style="display:none;" onclick="clearBuyPromo()">Remove</button>
+              <span id="promoStatusMsg" style="font-size:0.8rem;font-weight:700;"></span>
+            </div>
+          </div>
+
+          <div id="livePriceError" class="alert-error"></div>
+          <div class="country-list" id="countryList"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- AUTH -->
+    <div id="view-auth" class="page-view">
+      <div class="container"><div class="auth-container">
+        <div style="text-align:center;margin-bottom:20px;"><div class="section-kicker">TMSMSHub.com Account</div><h2 class="section-title gold-text" id="authPageHeading">Create Free Account</h2></div>
+        <div class="auth-tabs"><button type="button" class="auth-tab active" id="tabSignUp" onclick="switchAuthTab('signup')">Sign Up</button><button type="button" class="auth-tab" id="tabSignIn" onclick="switchAuthTab('signin')">Sign In</button></div>
+        <div class="alert-error" id="authError"></div>
+        <form id="authForm" onsubmit="submitAuthForm(event)">
+          <div class="form-group" id="authNameGroup"><label class="form-label" for="authName">Full Name</label><input type="text" id="authName" class="input-box" placeholder="e.g. Tunde Musa" /></div>
+          <div class="form-group"><label class="form-label" for="authEmail">Email Address</label><input type="email" id="authEmail" class="input-box" placeholder="you@example.com" required /></div>
+          <div class="form-group"><label class="form-label" for="authPassword">Password</label><input type="password" id="authPassword" class="input-box" placeholder="Minimum 6 characters" minlength="6" required /></div>
+          <div class="form-group" id="authReferralGroup"><label class="form-label" for="authReferralCode">Referral Code (Optional)</label><input type="text" id="authReferralCode" class="input-box" style="text-transform:uppercase;" placeholder="e.g. TM-AB123" /></div>
+          <button type="submit" class="btn-gold" id="authSubmitBtn" style="width:100%;margin-top:6px;">Create Free Account</button>
+        </form>
+        <div style="text-align:center;margin-top:16px;"><button class="btn-outline" style="width:100%;padding:10px;" onclick="navigateTo('home')">← Back</button></div>
+      </div></div>
+    </div>
+
+    <!-- PROFILE -->
+    <div id="view-profile" class="page-view">
+      <div class="page-banner"><div class="container page-banner-inner"><div><div class="section-kicker">Account Details</div><h1 class="section-title gold-text">My Profile</h1></div><div style="display:flex;gap:10px;"><button class="btn-outline" onclick="navigateTo('wallet')">Wallet</button><button class="btn-gold" onclick="navigateTo('my-numbers')">My Numbers</button></div></div></div>
+      <div class="container"><div class="wallet-grid">
+        <div class="panel-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px;">
+            <div><div class="section-kicker" style="margin-bottom:2px;">Customer Info</div><h3 id="profileNameDisplay" style="font-size:1.35rem;font-weight:800;">Customer</h3><div id="profileEmailDisplay" style="font-size:0.88rem;color:var(--text-secondary);"></div></div>
+            <button type="button" class="btn-outline btn-sm" onclick="toggleEditProfileName()">Edit Name</button>
+          </div>
+          <form id="editNameForm" onsubmit="saveProfileName(event)" style="display:none;margin-bottom:16px;"><div style="display:flex;gap:8px;"><input type="text" id="editNameInput" class="input-box" placeholder="Enter your name" required /><button type="submit" class="btn-gold btn-sm">Save</button></div></form>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="bank-box" style="margin-top:0;"><span style="color:var(--text-secondary);font-size:0.78rem;">Total Orders</span><strong id="profileTotalOrders" class="gold-text" style="font-size:1.4rem;font-family:'JetBrains Mono',monospace;">0</strong></div>
+            <div class="bank-box" style="margin-top:0;"><span style="color:var(--text-secondary);font-size:0.78rem;">Total Spent</span><strong id="profileTotalSpent" class="gold-text" style="font-size:1.4rem;font-family:'JetBrains Mono',monospace;">₦0</strong></div>
+          </div>
+        </div>
+        <div class="panel-card">
+          <div class="section-kicker" style="margin-bottom:4px;">Invite Friends • Earn ₦100 Each</div><h3 style="font-size:1.15rem;font-weight:800;margin-bottom:8px;">Your Referral Code</h3>
+          <div class="code-box" style="padding:14px 18px;"><span class="code-text" id="profileReferralCode" style="font-size:1.15rem;">TM-0000</span><button type="button" class="copy-mini" onclick="copyText($('profileReferralCode').textContent, this)">Copy</button></div>
+          <div style="font-size:0.84rem;color:var(--gold-300);margin-top:10px;">Successful Referrals: <strong id="profileReferralCount">0</strong></div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- WALLET -->
+    <div id="view-wallet" class="page-view">
+      <div class="page-banner"><div class="container page-banner-inner"><div><div class="section-kicker">NGN Wallet</div><h1 class="section-title">Fund Wallet &amp; History</h1></div><div style="display:flex;gap:10px;"><button class="btn-outline" onclick="navigateTo('home','countries')">Buy a Number</button><button class="btn-gold" onclick="navigateTo('my-numbers')">My Numbers</button></div></div></div>
+      <div class="container">
+        <div class="wallet-grid">
+          <div class="panel-card">
+            <div style="font-size:0.84rem;color:var(--text-secondary);font-weight:600;">Available Balance</div>
+            <div class="wallet-balance-big gold-text">₦<span id="walletBalanceDisplay">0</span></div>
+            <div class="alert-error" id="walletFundError"></div>
+            <div class="form-group" style="margin-bottom:8px;"><label class="form-label" for="fundAmountInput">Amount (NGN) — Min: ₦<span id="walletMinFundingLabel">500</span></label><input type="number" id="fundAmountInput" class="input-box" step="50" value="2000" /></div>
+            <div class="preset-row"><button type="button" class="preset-chip" onclick="setFundAmount(1000)">+ ₦1,000</button><button type="button" class="preset-chip" onclick="setFundAmount(2500)">+ ₦2,500</button><button type="button" class="preset-chip" onclick="setFundAmount(5000)">+ ₦5,000</button><button type="button" class="preset-chip" onclick="setFundAmount(10000)">+ ₦10,000</button></div>
+            <button type="button" class="btn-gold" style="width:100%;" onclick="payWithPaystack()">Pay with Paystack</button>
+            <p style="font-size:0.76rem;color:var(--text-muted);margin-top:10px;">Credits your wallet only after real server-side Paystack verification.</p>
+          </div>
+          <div class="panel-card">
+            <div class="section-kicker" style="margin-bottom:4px;">Refer &amp; Earn ₦100</div><h3 style="font-size:1.1rem;font-weight:800;margin-bottom:8px;">Your Referral Code</h3>
+            <div class="code-box" style="padding:12px 16px;"><span class="code-text" id="myReferralCode" style="font-size:1.1rem;">TM-0000</span><button type="button" class="copy-mini" onclick="copyText($('myReferralCode').textContent, this)">Copy Code</button></div>
+            <div style="font-size:0.8rem;color:var(--gold-300);margin-top:8px;">Successful Referrals: <strong id="myReferralCount">0</strong></div>
+          </div>
+        </div>
+        <div style="margin-bottom:36px;">
+          <div class="section-head" style="margin-bottom:14px;">
+            <div><div class="section-kicker">Wallet Ledger</div><h2 class="section-title" style="font-size:1.35rem;">Transaction History</h2></div>
+            <div class="wallet-filter-pills"><button type="button" class="wf-btn active" data-wf="ALL" onclick="setWalletFilter('ALL')">All</button><button type="button" class="wf-btn" data-wf="Fund" onclick="setWalletFilter('Fund')">Funds</button><button type="button" class="wf-btn" data-wf="Buy" onclick="setWalletFilter('Buy')">Purchases</button><button type="button" class="wf-btn" data-wf="Refund" onclick="setWalletFilter('Refund')">Refunds</button></div>
+          </div>
+          <div class="table-wrap"><table><thead><tr><th>Date</th><th>Type</th><th>Description</th><th>Amount</th><th>Balance After</th></tr></thead><tbody id="txHistoryBody"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MY NUMBERS -->
+    <div id="view-my-numbers" class="page-view">
+      <div class="page-banner"><div class="container page-banner-inner"><div><div class="section-kicker">Live 5sim Polling (Every 5s)</div><h1 class="section-title">My Numbers</h1></div><div style="display:flex;gap:10px;"><button class="btn-outline" onclick="navigateTo('wallet')">Balance: ₦<span id="myNumbersBalance">0</span></button><button class="btn-gold" onclick="navigateTo('home','countries')">+ Buy New Number</button></div></div></div>
+      <div class="container">
+        <div id="activeOrdersContainer"></div>
+        <div style="margin-top:34px;margin-bottom:40px;">
+          <div class="section-head" style="margin-bottom:14px;"><div><div class="section-kicker">Past &amp; Current Orders</div><h2 class="section-title" style="font-size:1.35rem;">Order History</h2></div></div>
+          <div class="table-wrap"><table><thead><tr><th>Date</th><th>App</th><th>Country</th><th>Number</th><th>Price (NGN)</th><th>Status</th><th>Actions</th></tr></thead><tbody id="orderHistoryBody"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HELP -->
+    <div id="view-help" class="page-view">
+      <div class="page-banner"><div class="container page-banner-inner"><div><div class="section-kicker">Customer Support</div><h1 class="section-title gold-text">Help &amp; FAQ</h1></div><button class="btn-gold" onclick="navigateTo('home','countries')">Buy a Number</button></div></div>
+      <div class="container"><div class="faq-grid">
+        <div class="panel-card"><h3 style="font-size:1.1rem;font-weight:800;margin-bottom:8px;">1. How to buy</h3><p style="font-size:0.88rem;color:var(--text-secondary);">Fund your NGN wallet via Paystack, pick an App &amp; Country with live stock, and click <strong>Get Number</strong>.</p></div>
+        <div class="panel-card"><h3 style="font-size:1.1rem;font-weight:800;margin-bottom:8px;">2. How long to wait?</h3><p style="font-size:0.88rem;color:var(--text-secondary);">The system polls 5sim every <strong>5 seconds</strong>. When SMS arrives, the real code auto-copies to your clipboard.</p></div>
+        <div class="panel-card"><h3 style="font-size:1.1rem;font-weight:800;margin-bottom:8px;">3. Refund policy</h3><p style="font-size:0.88rem;color:var(--text-secondary);"><strong style="color:#fca5a5;">No refund after code received.</strong> If no SMS arrives, click <strong>Cancel &amp; Refund</strong> to cancel on 5sim and refund your wallet.</p></div>
+        <div class="panel-card"><h3 style="font-size:1.1rem;font-weight:800;margin-bottom:8px;">4. Support</h3><p style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:12px;">Click <strong>Report Problem</strong> on any order or tap the green WhatsApp button.</p><button class="btn-outline" onclick="navigateTo('my-numbers')">Go to My Numbers</button></div>
+      </div></div>
+    </div>
+
+    <!-- ADMIN LOGIN -->
+    <div id="view-admin-login" class="page-view">
+      <div class="container"><div class="auth-container">
+        <div style="text-align:center;margin-bottom:22px;"><div class="section-kicker">Restricted Access</div><h2 class="section-title gold-text">Admin Login</h2></div>
+        <div class="alert-error" id="adminAuthError"></div>
+        <form onsubmit="submitAdminLogin(event)">
+          <div class="form-group"><label class="form-label" for="adminEmailInput">Admin Email</label><input type="email" id="adminEmailInput" class="input-box" placeholder="admin@tmsmshub.com" required /></div>
+          <div class="form-group"><label class="form-label" for="adminPasswordInput">Admin Password</label><input type="password" id="adminPasswordInput" class="input-box" placeholder="Enter admin password" required /></div>
+          <button type="submit" class="btn-gold" style="width:100%;margin-top:8px;">Sign In</button>
+        </form>
+        <div style="text-align:center;margin-top:16px;"><button class="btn-outline" style="width:100%;padding:10px;" onclick="navigateTo('home')">← Back</button></div>
+      </div></div>
+    </div>
+
+    <!-- ADMIN DASHBOARD -->
+    <div id="view-admin-dashboard" class="page-view">
+      <div class="page-banner"><div class="container page-banner-inner">
+        <div><div class="section-kicker">TM True Exchange • 5sim Balance: <span id="admin5simBalance">Loading...</span></div><h1 class="section-title gold-text">Admin Dashboard</h1></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+          <button class="hamburger-btn" id="adminBellBtn" onclick="ackAdminNotifications()">🔔 <span class="bell-badge" id="adminBellCount">0</span></button>
+          <button class="btn-outline btn-sm" id="adminBeepToggleBtn" onclick="toggleAdminBeep()">Sound Beep: ON</button>
+          <button class="btn-gold btn-sm" onclick="exportOrdersCSV()">Export CSV</button>
+          <button class="btn-outline btn-sm" onclick="navigateTo('home')">Storefront</button>
+          <button class="btn-danger-outline" onclick="logoutAdmin()">Sign Out</button>
+        </div>
+      </div></div>
+      <div class="container">
+        <div class="admin-stats-grid">
+          <div class="panel-card"><div style="font-size:0.78rem;color:var(--text-secondary);font-weight:700;text-transform:uppercase;">Total Users</div><div class="admin-stat-num gold-text" id="adminTotalUsers">0</div></div>
+          <div class="panel-card"><div style="font-size:0.78rem;color:var(--text-secondary);font-weight:700;text-transform:uppercase;">Orders Today</div><div class="admin-stat-num gold-text" id="adminOrdersToday">0</div></div>
+          <div class="panel-card"><div style="font-size:0.78rem;color:var(--text-secondary);font-weight:700;text-transform:uppercase;">Revenue Today</div><div class="admin-stat-num gold-text" id="adminRevenueToday">₦0</div></div>
+          <div class="panel-card"><div style="font-size:0.78rem;color:var(--text-secondary);font-weight:700;text-transform:uppercase;">Revenue All Time</div><div class="admin-stat-num gold-text" id="adminTotalRevenue">₦0</div></div>
+        </div>
+        <div class="admin-tabs" style="margin-bottom:22px;">
+          <button type="button" class="admin-tab-btn active" data-atab="users" onclick="setAdminTab('users')">Users</button>
+          <button type="button" class="admin-tab-btn" data-atab="live" onclick="setAdminTab('live')">Live Orders</button>
+          <button type="button" class="admin-tab-btn" data-atab="lowstock" onclick="setAdminTab('lowstock')">Low Stock <span id="adminLowStockBadge" style="color:#fca5a5;"></span></button>
+          <button type="button" class="admin-tab-btn" data-atab="allorders" onclick="setAdminTab('allorders')">All Orders</button>
+          <button type="button" class="admin-tab-btn" data-atab="transactions" onclick="setAdminTab('transactions')">Transactions</button>
+          <button type="button" class="admin-tab-btn" data-atab="prices" onclick="setAdminTab('prices')">Price Settings</button>
+          <button type="button" class="admin-tab-btn" data-atab="promos" onclick="setAdminTab('promos')">Promos</button>
+          <button type="button" class="admin-tab-btn" data-atab="reports" onclick="setAdminTab('reports')">Reports <span id="adminReportsBadge" style="color:#fca5a5;"></span></button>
+        </div>
+
+        <div id="atab-users" class="admin-tab-panel active"><div class="table-wrap"><table><thead><tr><th>User</th><th>Balance</th><th>Orders</th><th>Status</th><th>Actions</th></tr></thead><tbody id="adminUsersBody"></tbody></table></div></div>
+        <div id="atab-live" class="admin-tab-panel"><div class="table-wrap"><table><thead><tr><th>Date</th><th>User</th><th>App / Country</th><th>Number</th><th>Status</th><th>Actions</th></tr></thead><tbody id="adminLiveOrdersBody"></tbody></table></div></div>
+        <div id="atab-lowstock" class="admin-tab-panel"><div class="table-wrap"><table><thead><tr><th>Country</th><th>App</th><th>Live 5sim Stock</th><th>Price in NGN</th></tr></thead><tbody id="adminLowStockBody"></tbody></table></div></div>
+        <div id="atab-allorders" class="admin-tab-panel">
+          <div class="search-wrap"><span class="search-icon">🔍</span><input type="text" id="adminOrderSearch" class="search-input" placeholder="Search orders by user email or phone number..." oninput="renderAdminDashboard()" /></div>
+          <div class="table-wrap"><table><thead><tr><th>Date</th><th>User</th><th>App</th><th>Country</th><th>Number</th><th>Price</th><th>Status</th><th>SMS Code</th><th>Actions</th></tr></thead><tbody id="adminOrdersBody"></tbody></table></div>
+        </div>
+        <div id="atab-transactions" class="admin-tab-panel"><div class="table-wrap"><table><thead><tr><th>Date</th><th>User</th><th>Type</th><th>Description</th><th>Amount</th><th>Balance After</th></tr></thead><tbody id="adminAllTxBody"></tbody></table></div></div>
+        <div id="atab-prices" class="admin-tab-panel">
+          <div class="admin-settings-grid">
+            <div class="panel-card"><h3 style="font-size:1.1rem;font-weight:800;margin-bottom:12px;">Minimum Funding (NGN)</h3><div class="form-group"><input type="number" id="adminMinFundingInput" class="input-box" min="0" step="50" value="500" /></div><button type="button" class="btn-gold" style="width:100%;" onclick="saveGlobalSettings()">Save Global Settings</button></div>
+            <div class="panel-card"><h3 style="font-size:1.1rem;font-weight:800;margin-bottom:12px;">Profit Margin on 5sim Cost</h3><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;"><select id="adminMarginType" class="select-box"><option value="ngn">+ NGN (Fixed)</option><option value="percent">+ %</option></select><input type="number" id="adminMarginValue" class="input-box" min="0" step="1" value="0" /></div><button type="button" class="btn-gold" style="width:100%;" onclick="saveProfitMargin()">Save Profit Margin</button></div>
+          </div>
+        </div>
+        <div id="atab-promos" class="admin-tab-panel">
+          <div class="panel-card" style="margin-bottom:20px;"><form onsubmit="submitAdminNewPromo(event)" style="display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;"><div><label class="form-label">Promo Code</label><input type="text" id="newPromoCode" class="input-box" style="text-transform:uppercase;" placeholder="e.g. TM10" required /></div><div><label class="form-label">Discount (%)</label><input type="number" id="newPromoDiscount" class="input-box" min="1" max="90" value="10" required /></div><button type="submit" class="btn-gold" style="height:48px;">Create</button></form></div>
+          <div class="table-wrap"><table><thead><tr><th>Code</th><th>Discount</th><th>Actions</th></tr></thead><tbody id="adminPromosBody"></tbody></table></div>
+        </div>
+        <div id="atab-reports" class="admin-tab-panel"><div class="table-wrap"><table><thead><tr><th>Date</th><th>Order ID</th><th>User</th><th>Details</th><th>Message</th><th>Status</th><th>Action</th></tr></thead><tbody id="adminReportsBody"></tbody></table></div></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" id="siteFooter">
+    <div class="container footer-inner">
+      <div><div class="footer-brand gold-text">TMSMSHub.com - By TM True Exchange</div><div class="footer-sub">© <span id="yearNow"></span> TM True Exchange. Live 5sim Gateway • NGN Wallet.</div></div>
+      <div class="footer-links">
+        <button type="button" class="footer-link" onclick="event.stopPropagation();navigateTo('help')">Help &amp; FAQ</button>
+        <button type="button" class="footer-link" onclick="event.stopPropagation();openPolicyModal('terms')">Terms</button>
+        <button type="button" class="footer-link" onclick="event.stopPropagation();openPolicyModal('refund')">Refund Policy: No refund after code received</button>
+        <a id="footerWhatsappLink" href="#" target="_blank" rel="noopener noreferrer" class="footer-whatsapp" onclick="event.stopPropagation();">Contact WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <a id="floatingWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="floating-wa-btn">💬 <span>Need help? Chat us on WhatsApp</span></a>
+
+  <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-head"><h3 class="gold-text" style="font-size:1.25rem;font-weight:800;">Checkout Number</h3><button class="hamburger-btn" onclick="closeModal('checkoutModal')">✕</button></div>
+      <div class="checkout-summary">
+        <div class="checkout-row"><span>App</span><strong id="coApp">WhatsApp</strong></div>
+        <div class="checkout-row"><span>Country</span><strong id="coCountry">United States</strong></div>
+        <div class="checkout-row"><span>Price</span><strong class="gold-text" id="coPrice" style="font-family:'JetBrains Mono',monospace;">0 NGN</strong></div>
+        <div class="checkout-row"><span>5sim Live Stock</span><strong id="coStock" style="color:#4ade80;">0</strong></div>
+        <div class="checkout-row" style="padding-top:8px;border-top:1px solid rgba(212,175,55,0.2);"><span>Balance</span><strong id="coBalance" style="font-family:'JetBrains Mono',monospace;">₦0</strong></div>
+      </div>
+      <div id="coErrorBox" class="alert-error"></div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <button id="coBuyBtn" class="btn-gold" style="width:100%;" onclick="confirmBuyNumber()">Buy Number Now</button>
+        <button id="coFundBtn" class="btn-gold" style="width:100%;display:none;" onclick="closeModal('checkoutModal');navigateTo('wallet');">Fund Wallet</button>
+        <button id="coSignInBtn" class="btn-gold" style="width:100%;display:none;" onclick="closeModal('checkoutModal');openAuthPage('signin');">Sign In / Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="ratingModal" aria-hidden="true">
+    <div class="modal" style="text-align:center;">
+      <div class="modal-head"><h3 class="gold-text" style="font-size:1.2rem;font-weight:800;">Did number work? Rate 1-5 stars</h3><button class="hamburger-btn" onclick="closeModal('ratingModal')">✕</button></div>
+      <p id="ratingSubText" style="font-size:0.88rem;color:var(--text-secondary);"></p>
+      <div class="star-picker" id="starPicker">
+        <button type="button" class="star-pick-btn lit" onclick="selectStarRating(1)">★</button>
+        <button type="button" class="star-pick-btn lit" onclick="selectStarRating(2)">★</button>
+        <button type="button" class="star-pick-btn lit" onclick="selectStarRating(3)">★</button>
+        <button type="button" class="star-pick-btn lit" onclick="selectStarRating(4)">★</button>
+        <button type="button" class="star-pick-btn lit" onclick="selectStarRating(5)">★</button>
+      </div>
+      <button type="button" class="btn-gold" style="width:100%;" onclick="submitOrderRating()">Submit Rating</button>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="reportModal" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-head"><h3 class="gold-text" style="font-size:1.2rem;font-weight:800;">Report Problem</h3><button class="hamburger-btn" onclick="closeModal('reportModal')">✕</button></div>
+      <p style="font-size:0.86rem;color:var(--text-secondary);margin-bottom:12px;">Order ID: <strong id="reportOrderId" style="color:var(--gold-300);font-family:'JetBrains Mono',monospace;"></strong></p>
+      <form onsubmit="submitProblemReport(event)"><div class="form-group"><textarea id="reportMessage" class="textarea-box" rows="3" placeholder="Describe the issue..." required></textarea></div><button type="submit" class="btn-gold" style="width:100%;">Send Report</button></form>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="policyModal" aria-hidden="true">
+    <div class="modal"><div class="modal-head"><h3 id="policyTitle" class="gold-text" style="font-size:1.2rem;font-weight:800;">Terms</h3><button class="hamburger-btn" onclick="closeModal('policyModal')">✕</button></div><div id="policyBody" style="font-size:0.9rem;color:var(--text-secondary);line-height:1.65;margin-bottom:18px;"></div><button class="btn-gold" style="width:100%;" onclick="closeModal('policyModal')">Close</button></div>
+  </div>
+
+  <div class="modal-backdrop" id="adminBalanceModal" aria-hidden="true">
+    <div class="modal"><div class="modal-head"><h3 class="gold-text" style="font-size:1.2rem;font-weight:800;">Add User Balance</h3><button class="hamburger-btn" onclick="closeModal('adminBalanceModal')">✕</button></div><p style="font-size:0.86rem;color:var(--text-secondary);margin-bottom:14px;">User: <strong id="adminTargetEmail" style="color:var(--gold-300);"></strong></p><form onsubmit="submitAdminAddBalance(event)"><div class="form-group"><input type="number" id="adminAddAmount" class="input-box" min="1" step="1" required /></div><button type="submit" class="btn-gold" style="width:100%;">Credit Balance</button></form></div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    const WHATSAPP_NUMBER = '234XXXXXXXXXX';
+    const ADMIN_EMAIL = 'admin@tmsmshub.com';
+    const ADMIN_PASSWORD = 'CHANGE_ME_LATER';
+    const STORAGE_KEY = 'tmsms_hub_live_v1';
+    const ADMIN_SESSION_KEY = 'tmsms_admin_session_v1';
+    const $ = id => document.getElementById(id);
+
+    let SERVER_CONFIG = { paystackPublicKey: '', rubToNgn: 18 };
+    let LIVE_5SIM_LIST = []; // Populated ONLY from real /api/5sim/prices
+
+    $('yearNow').textContent = new Date().getFullYear();
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello TM SMS HUB Support, I need help.')}`;
+    $('floatingWaBtn').href = waUrl; $('footerWhatsappLink').href = waUrl;
+    const langs = ['EN','FR','ES']; let langIdx = 0;
+    $('langBtn').onclick = () => { langIdx=(langIdx+1)%langs.length; $('langCode').textContent = langs[langIdx]; };
+
+    const APPS = [
+      {name:'Facebook',slug:'facebook',short:'FB',color:'#2563eb'},{name:'WhatsApp',slug:'whatsapp',short:'WA',color:'#16a34a'},
+      {name:'Telegram',slug:'telegram',short:'TG',color:'#0284c7'},{name:'Gmail',slug:'google',short:'GM',color:'#dc2626'},
+      {name:'Instagram',slug:'instagram',short:'IG',color:'#e11d48'},{name:'TikTok',slug:'tiktok',short:'TT',color:'#db2777'},
+      {name:'Google',slug:'google',short:'G',color:'#ea580c'},{name:'X',slug:'twitter',short:'X',color:'#27272a'},
+      {name:'Snapchat',slug:'snapchat',short:'SC',color:'#ca8a04'},{name:'Discord',slug:'discord',short:'DC',color:'#4f46e5'},
+      {name:'Tinder',slug:'tinder',short:'TD',color:'#e11d48'},{name:'Microsoft',slug:'microsoft',short:'MS',color:'#0369a1'},
+      {name:'Apple',slug:'apple',short:'AP',color:'#3f3f46'},{name:'Amazon',slug:'amazon',short:'AZ',color:'#d97706'},
+      {name:'PayPal',slug:'paypal',short:'PP',color:'#1d4ed8'},{name:'Uber',slug:'uber',short:'UB',color:'#18181b'},
+      {name:'Binance',slug:'binance',short:'BN',color:'#b45309'},{name:'OpenAI',slug:'openai',short:'AI',color:'#059669'}
+    ];
+
+    const COUNTRIES = [
+      {name:'United States',slug:'usa',aliases:'usa us america',flag:'🇺🇸'},{name:'United Kingdom',slug:'england',aliases:'uk england britain',flag:'🇬🇧'},
+      {name:'Philippines',slug:'philippines',aliases:'ph',flag:'🇵🇭'},{name:'Canada',slug:'canada',aliases:'ca',flag:'🇨🇦'},
+      {name:'Thailand',slug:'thailand',aliases:'th',flag:'🇹🇭'},{name:'Colombia',slug:'colombia',aliases:'co',flag:'🇨🇴'},
+      {name:'Portugal',slug:'portugal',aliases:'pt',flag:'🇵🇹'},{name:'Brazil',slug:'brazil',aliases:'br',flag:'🇧🇷'},
+      {name:'Türkiye',slug:'turkey',aliases:'turkey tr',flag:'🇹🇷'},{name:'Morocco',slug:'morocco',aliases:'ma',flag:'🇲🇦'},
+      {name:'Austria',slug:'austria',aliases:'at',flag:'🇦🇹'},{name:'Côte d\'Ivoire',slug:'ivorycoast',aliases:'ivory coast ci',flag:'🇨🇮'},
+      {name:'Sierra Leone',slug:'sierraleone',aliases:'sl',flag:'🇸🇱'}
+    ];
+
+    function genRefCode(em) { return `TM-${(em||'TM').replace(/[^a-zA-Z0-9]/g,'').toUpperCase().slice(0,3)||'TM'}${Math.floor(100+Math.random()*899)}`; }
+    function loadState() {
+      let s = {}; try { const r = localStorage.getItem(STORAGE_KEY); if (r) s = JSON.parse(r) || {}; } catch (e) {}
+      if (!Array.isArray(s.users)) s.users = [];
+      s.users.forEach(u => {
+        if (!u.name) u.name = u.email.split('@')[0];
+        if (!u.referralCode) u.referralCode = genRefCode(u.email);
+        if (typeof u.referralsCount !== 'number') u.referralsCount = 0;
+        if (typeof u.blocked !== 'boolean') u.blocked = false;
+        if (!Array.isArray(u.transactions)) u.transactions = [];
+        if (!Array.isArray(u.orders)) u.orders = [];
+      });
+      if (!s.buyAppFilter) s.buyAppFilter = 'WhatsApp';
+      if (s.selectedCountry === undefined) s.selectedCountry = '';
+      if (!s.adminSettings) s.adminSettings = {minFunding:500,marginType:'ngn',marginValue:0,beepEnabled:true};
+      if (!Array.isArray(s.promoCodes)) s.promoCodes = [];
+      if (!Array.isArray(s.reports)) s.reports = [];
+      if (!Array.isArray(s.favorites)) s.favorites = [];
+      if (!s.countryRatings) s.countryRatings = {};
+      if (typeof s.adminUnreadOrders !== 'number') s.adminUnreadOrders = 0;
+      return s;
+    }
+    function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(appState)); }
+    let appState = loadState(); saveState();
+
+    function playBeep(freq = 880) {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)(), o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = 'sine'; o.frequency.setValueAtTime(freq, ctx.currentTime);
+        g.gain.setValueAtTime(0.14, ctx.currentTime); g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.25);
+        o.connect(g); g.connect(ctx.destination); o.start(); o.stop(ctx.currentTime + 0.26);
+      } catch (e) {}
+    }
+
+    function getCountryMeta(n) { return COUNTRIES.find(c => c.name === n) || {name:n,slug:n.toLowerCase(),aliases:'',flag:'🌍'}; }
+    function getAppMeta(n) { return APPS.find(a => a.name === n) || {name:n,slug:n.toLowerCase(),short:n.slice(0,2).toUpperCase(),color:'#d4af37'}; }
+    function getCountryAvgRating(c) { const r = appState.countryRatings?.[c]; return (r && r.count > 0) ? (r.sum / r.count).toFixed(1) : null; }
+    function getCurrentUser() { return appState.currentUserEmail ? (appState.users.find(u => u.email.toLowerCase() === appState.currentUserEmail.toLowerCase()) || null) : null; }
+    function isAdminAuthenticated() { return sessionStorage.getItem(ADMIN_SESSION_KEY) === 'true'; }
+    function formatNGN(n) { return Number(n||0).toLocaleString('en-NG'); }
+    function showToast(m, green = false) { const t = $('toast'); t.textContent = m; t.className = 'toast show' + (green?' toast-green':''); clearTimeout(window._tt); window._tt = setTimeout(() => t.classList.remove('show'), 3500); }
+    function openModal(id) { $(id).classList.add('open'); $(id).setAttribute('aria-hidden','false'); }
+    function closeModal(id) { $(id).classList.remove('open'); $(id).setAttribute('aria-hidden','true'); }
+    document.querySelectorAll('.modal-backdrop').forEach(m => m.addEventListener('click', e => { if (e.target === m) closeModal(m.id); }));
+    function openDrawer() { $('drawer').classList.add('open'); $('drawerOverlay').classList.add('open'); }
+    function closeDrawer() { $('drawer').classList.remove('open'); $('drawerOverlay').classList.remove('open'); }
+    $('menuOpenBtn').onclick = openDrawer; $('menuCloseBtn').onclick = closeDrawer; $('drawerOverlay').onclick = closeDrawer;
+
+    let currentView = 'home';
+    function navigateTo(view, scrollId = null) {
+      const u = getCurrentUser();
+      if (['wallet','my-numbers','profile'].includes(view) && !u) { showToast('Please sign in first.'); openAuthPage('signin', view); return; }
+      if (view === 'admin-dashboard' && !isAdminAuthenticated()) { navigateTo('admin-login'); return; }
+      currentView = view;
+      document.querySelectorAll('.page-view').forEach(el => el.classList.remove('active'));
+      if ($('view-'+view)) $('view-'+view).classList.add('active');
+      if (view === 'home') refreshBuyPage();
+      if (view === 'wallet') renderWalletPage();
+      if (view === 'profile') renderProfilePage();
+      if (view === 'my-numbers') renderMyNumbersPage();
+      if (view === 'admin-dashboard') renderAdminDashboard();
+      if (scrollId) setTimeout(() => { const el = $(scrollId); if (el) el.scrollIntoView({behavior:'smooth'}); }, 60);
+      else window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    function checkAdminRoute() {
+      const p = location.pathname.toLowerCase(), h = location.hash.toLowerCase();
+      if (p.endsWith('/admin') || p.endsWith('/admin/') || h === '#/admin' || h === '#admin') navigateTo(isAdminAuthenticated() ? 'admin-dashboard' : 'admin-login');
+    }
+    window.addEventListener('hashchange', checkAdminRoute);
+    let fTap = 0, fTimer = null;
+    $('siteFooter').onclick = () => { fTap++; clearTimeout(fTimer); fTimer = setTimeout(() => fTap=0, 2500); if (fTap >= 5) { fTap=0; navigateTo(isAdminAuthenticated() ? 'admin-dashboard' : 'admin-login'); } };
+
+    function submitAdminLogin(e) {
+      e.preventDefault();
+      const em = $('adminEmailInput').value.trim(), pw = $('adminPasswordInput').value, err = $('adminAuthError');
+      err.style.display = 'none';
+      if (em.toLowerCase() === ADMIN_EMAIL.toLowerCase() && pw === ADMIN_PASSWORD) {
+        sessionStorage.setItem(ADMIN_SESSION_KEY, 'true'); $('adminEmailInput').value = ''; $('adminPasswordInput').value = '';
+        showToast('Welcome, Admin.'); navigateTo('admin-dashboard');
+      } else { err.textContent = 'Invalid admin credentials.'; err.style.display = 'block'; }
+    }
+    function logoutAdmin() { sessionStorage.removeItem(ADMIN_SESSION_KEY); if (location.hash.toLowerCase().includes('admin')) history.replaceState(null,'',location.pathname); navigateTo('home'); }
+
+    // FETCH REAL CONFIG & LIVE 5SIM PRICES
+    let activePromoCode = null;
+    function computeFinalPrice(baseNgn) {
+      const {marginType, marginValue} = appState.adminSettings, v = Number(marginValue||0);
+      let p = marginType==='percent' ? Math.max(1, Math.round(baseNgn + baseNgn*v/100)) : Math.max(1, Math.round(baseNgn + v));
+      if (activePromoCode) { const pr = (appState.promoCodes||[]).find(x => x.code.toUpperCase()===activePromoCode.toUpperCase()); if (pr) p = Math.max(1, Math.round(p*(1-pr.discountPct/100))); }
+      return p;
+    }
+
+    async function loadLive5simPrices(showMsg = false) {
+      const errBox = $('livePriceError'); errBox.style.display = 'none';
+      try {
+        const cfgRes = await fetch('/api/config');
+        if (cfgRes.ok) SERVER_CONFIG = await cfgRes.json();
+        const res = await fetch('/api/5sim/prices');
+        const data = await res.json();
+        if (!res.ok || !data.ok) throw new Error(data.error || 'Failed to load 5sim prices');
+
+        const rubRate = Number(data.rubToNgn || SERVER_CONFIG.rubToNgn || 18);
+        const built = [];
+        COUNTRIES.forEach(c => {
+          const cData = data.prices?.[c.slug];
+          if (!cData) return;
+          APPS.forEach(a => {
+            const pData = cData[a.slug];
+            if (!pData) return;
+            // Pick lowest cost available operator on 5sim (or first operator if 0 stock)
+            let bestCost = Infinity, totalStock = 0;
+            Object.values(pData).forEach(op => {
+              if (!op || typeof op !== 'object') return;
+              const cnt = Number(op.count || 0), cost = Number(op.cost || 0);
+              totalStock += cnt;
+              if (cnt > 0 && cost > 0 && cost < bestCost) bestCost = cost;
+              else if (bestCost === Infinity && cost > 0) bestCost = cost;
+            });
+            if (bestCost !== Infinity) {
+              built.push({ country:c.name, countrySlug:c.slug, app:a.name, appSlug:a.slug, baseNgn:Math.max(1, Math.ceil(bestCost * rubRate)), priceRub:bestCost, stock:totalStock });
+            }
+          });
+        });
+        LIVE_5SIM_LIST = built;
+        refreshBuyPage();
+        if (showMsg) showToast('Live 5sim prices & stock updated!', true);
+      } catch (err) {
+        LIVE_5SIM_LIST = [];
+        errBox.textContent = `5sim API Error: ${err.message}`;
+        errBox.style.display = 'block';
+        refreshBuyPage();
+      }
+    }
+
+    // PROFILE, AUTH, FAVORITES, PROMOS
+    function renderProfilePage() {
+      const u = getCurrentUser(); if (!u) return;
+      $('profileNameDisplay').textContent = u.name || u.email.split('@')[0]; $('profileEmailDisplay').textContent = u.email;
+      $('editNameInput').value = u.name || ''; $('editNameForm').style.display = 'none';
+      $('profileTotalOrders').textContent = u.orders.length;
+      $('profileTotalSpent').textContent = '₦' + formatNGN(u.orders.filter(o => o.status !== 'Cancelled').reduce((a,o)=>a+Number(o.priceNum||0),0));
+      $('profileReferralCode').textContent = u.referralCode; $('profileReferralCount').textContent = u.referralsCount || 0;
+    }
+    function toggleEditProfileName() { const f = $('editNameForm'); f.style.display = f.style.display==='none'?'block':'none'; }
+    function saveProfileName(e) { e.preventDefault(); const u = getCurrentUser(), nm = $('editNameInput').value.trim(); if (!u||!nm) return; u.name = nm; saveState(); updateAuthUI(); renderProfilePage(); showToast('Name updated!', true); }
+
+    let authMode = 'signup', postAuthRedirect = 'home';
+    function openAuthPage(mode = 'signup', redir = 'home') { postAuthRedirect = redir; switchAuthTab(mode); navigateTo('auth'); }
+    function switchAuthTab(mode) {
+      authMode = mode; const isUp = mode === 'signup';
+      $('tabSignUp').classList.toggle('active', isUp); $('tabSignIn').classList.toggle('active', !isUp);
+      $('authPageHeading').textContent = isUp ? 'Create Free Account' : 'Sign In to TM SMS HUB';
+      $('authSubmitBtn').textContent = isUp ? 'Create Free Account' : 'Sign In';
+      $('authNameGroup').style.display = isUp ? 'block' : 'none'; $('authReferralGroup').style.display = isUp ? 'block' : 'none'; $('authError').style.display = 'none';
+    }
+    function submitAuthForm(e) {
+      e.preventDefault();
+      const name = ($('authName').value||'').trim(), email = $('authEmail').value.trim(), pass = $('authPassword').value, err = $('authError');
+      err.style.display = 'none';
+      if (authMode === 'signup') {
+        if (appState.users.some(u => u.email.toLowerCase() === email.toLowerCase())) { err.textContent = 'Email already exists.'; err.style.display = 'block'; return; }
+        const refIn = ($('authReferralCode').value||'').trim().toUpperCase(), refUser = refIn ? appState.users.find(u => u.referralCode.toUpperCase() === refIn) : null;
+        if (refIn && !refUser) { err.textContent = 'Invalid referral code.'; err.style.display = 'block'; return; }
+        const nu = { name:name||email.split('@')[0], email, password:pass, balance:refUser?100:0, referralCode:genRefCode(email), referralsCount:0, blocked:false, transactions:[], orders:[] };
+        if (refUser) {
+          nu.transactions.unshift({id:'TX-RB-'+Date.now(),date:new Date().toLocaleString(),type:'Fund',description:`Referral Bonus (${refUser.referralCode})`,method:'Referral',amount:'+₦100',balanceAfter:100,status:'Completed'});
+          refUser.balance = Number(refUser.balance)+100; refUser.referralsCount = (refUser.referralsCount||0)+1;
+          refUser.transactions.unshift({id:'TX-RR-'+Date.now(),date:new Date().toLocaleString(),type:'Fund',description:`Referral Reward (${email})`,method:'Referral',amount:'+₦100',balanceAfter:refUser.balance,status:'Completed'});
+        }
+        appState.users.push(nu); appState.currentUserEmail = email; saveState(); updateAuthUI(); $('authForm').reset();
+        showToast('Account created!', true); navigateTo(postAuthRedirect==='auth'?'home':postAuthRedirect);
+      } else {
+        const u = appState.users.find(x => x.email.toLowerCase() === email.toLowerCase());
+        if (!u || u.password !== pass) { err.textContent = 'Invalid email or password.'; err.style.display = 'block'; return; }
+        if (u.blocked) { err.textContent = 'Your account is blocked.'; err.style.display = 'block'; return; }
+        appState.currentUserEmail = u.email; saveState(); updateAuthUI(); $('authForm').reset();
+        showToast('Signed in!', true); navigateTo(postAuthRedirect==='auth'?'home':postAuthRedirect);
+      }
+    }
+    function logoutUser() { appState.currentUserEmail = null; saveState(); updateAuthUI(); navigateTo('home'); }
+
+    function updateAuthUI() {
+      const u = getCurrentUser();
+      if (u) {
+        const fmt = formatNGN(u.balance);
+        $('headerSignInBtn').style.display = 'none'; $('headerBalancePill').style.display = 'inline-flex'; $('headerFundBtn').style.display = 'inline-flex';
+        $('headerBalanceValue').textContent = fmt; $('drawerBalanceValue').textContent = fmt;
+        $('drawerUserName').textContent = u.name; $('drawerUserEmail').textContent = u.email;
+        $('drawerUserBox').style.display = 'block'; $('drawerAuthOut').style.display = 'none'; $('drawerAuthIn').style.display = 'block';
+        const wc = u.orders.filter(o => o.status === 'Waiting for SMS').length;
+        $('drawerActiveCount').textContent = wc > 0 ? `${wc} active` : '→';
+      } else {
+        $('headerSignInBtn').style.display = 'inline-flex'; $('headerBalancePill').style.display = 'none'; $('headerFundBtn').style.display = 'none';
+        $('drawerUserBox').style.display = 'none'; $('drawerAuthOut').style.display = 'flex'; $('drawerAuthIn').style.display = 'none';
+        $('drawerActiveCount').textContent = '→';
+      }
+    }
+
+    function copyText(text, btn, greenMsg = null) {
+      navigator.clipboard?.writeText(text).catch(() => {});
+      if (btn) { const p = btn.textContent; btn.textContent = 'Copied!'; setTimeout(() => btn.textContent = p, 1400); }
+      showToast(greenMsg || ('Copied: ' + text), !!greenMsg);
+    }
+
+    function toggleFavorite(c, a) { const k = `${c}|${a}`, i = appState.favorites.indexOf(k); if (i>=0) appState.favorites.splice(i,1); else appState.favorites.push(k); saveState(); refreshBuyPage(); }
+    function isFavorite(c, a) { return (appState.favorites||[]).includes(`${c}|${a}`); }
+    function applyBuyPromo() {
+      const code = ($('buyPromoInput').value||'').trim().toUpperCase(), pr = (appState.promoCodes||[]).find(p => p.code.toUpperCase() === code);
+      if (!pr) { activePromoCode=null; $('clearPromoBtn').style.display='none'; $('promoStatusMsg').style.color='#fca5a5'; $('promoStatusMsg').textContent='Invalid promo code.'; refreshBuyPage(); return; }
+      activePromoCode = pr.code; $('clearPromoBtn').style.display='inline-flex'; $('promoStatusMsg').style.color='#4ade80'; $('promoStatusMsg').textContent=`${pr.code} (${pr.discountPct}% off)`; refreshBuyPage();
+    }
+    function clearBuyPromo() { activePromoCode=null; $('buyPromoInput').value=''; $('promoStatusMsg').textContent=''; $('clearPromoBtn').style.display='none'; refreshBuyPage(); }
+
+    function renderApps(filter = '') {
+      const q = filter.trim().toLowerCase(), list = APPS.filter(a => a.name.toLowerCase().includes(q)), g = $('appsGrid');
+      g.innerHTML = '';
+      list.forEach(app => {
+        const b = document.createElement('button');
+        b.className = 'app-card' + (app.name === appState.buyAppFilter ? ' active' : '');
+        b.innerHTML = `<div class="app-avatar" style="background:${app.color}">${app.short}</div><div class="app-meta"><div class="app-name">${app.name}</div><div class="app-sub">Live 5sim</div></div>`;
+        b.onclick = () => { setBuyAppFilter(app.name); $('countries').scrollIntoView({behavior:'smooth'}); };
+        g.appendChild(b);
+      });
+    }
+    $('appSearch').oninput = e => renderApps(e.target.value);
+
+    let sortMode = 'best';
+    function setSort(m) { sortMode = m; $('sortBestBtn').classList.toggle('active', m==='best'); $('sortAzBtn').classList.toggle('active', m==='az'); refreshBuyPage(); }
+    function setBuyAppFilter(a) { appState.buyAppFilter = a || 'ALL'; saveState(); renderApps($('appSearch').value); refreshBuyPage(); }
+    function onCountryPickerChange(c) { appState.selectedCountry = c || ''; saveState(); refreshBuyPage(); }
+
+    function refreshBuyPage() {
+      const picker = $('customerCountryPicker');
+      picker.innerHTML = '<option value="">All Countries</option>' + COUNTRIES.map(c => `<option value="${c.name}">${c.flag} ${c.name}</option>`).join('');
+      picker.value = appState.selectedCountry || '';
+
+      const af = appState.buyAppFilter || 'WhatsApp';
+      document.querySelectorAll('#buyAppFilterPills .app-filter-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-app') === af));
+      const sq = ($('buySearchInput').value||'').trim().toLowerCase();
+      $('selectedFilterLabel').textContent = (af==='ALL'?'All Apps':af==='FAV'?'⭐ My Favorites':af) + (appState.selectedCountry?` • ${appState.selectedCountry}`:'');
+
+      const rows = LIVE_5SIM_LIST.filter(r => {
+        if (appState.selectedCountry && r.country !== appState.selectedCountry) return false;
+        if (af === 'FAV') { if (!isFavorite(r.country, r.app)) return false; }
+        else if (af !== 'ALL' && r.app !== af) return false;
+        if (sq) { const cm = getCountryMeta(r.country); if (!`${r.country} ${cm.aliases} ${r.app}`.toLowerCase().includes(sq)) return false; }
+        return true;
+      });
+
+      rows.sort((a,b) => sortMode==='az' ? (a.country.localeCompare(b.country)||a.app.localeCompare(b.app)) : (b.stock - a.stock || a.baseNgn - b.baseNgn));
+
+      const cl = $('countryList');
+      if (!rows.length) { cl.innerHTML = `<div class="panel-card" style="grid-column:1/-1;text-align:center;color:var(--text-secondary);">No matching live 5sim numbers found.</div>`; return; }
+
+      cl.innerHTML = rows.map(r => {
+        const cm = getCountryMeta(r.country), am = getAppMeta(r.app), fp = computeFinalPrice(r.baseNgn), out = r.stock <= 0, fav = isFavorite(r.country, r.app), avg = getCountryAvgRating(r.country);
+        const sc = r.country.replace(/'/g,"\\'"), sa = r.app.replace(/'/g,"\\'");
+        const stTag = out ? `<span class="stock-tag stock-zero">In Stock: 0</span>` : r.stock<=5 ? `<span class="stock-tag stock-low">In Stock: ${r.stock}</span>` : `<span class="stock-tag stock-ok">In Stock: ${r.stock}</span>`;
+        const btn = out ? `<button type="button" class="btn-out-stock" disabled>Out of Stock</button>` : `<button type="button" class="get-num-btn" onclick="openCheckout('${sc}','${sa}',${fp},'${cm.flag}',${r.stock})">Get Number</button>`;
+        return `<div class="country-row">
+          <div class="country-top">
+            <div class="country-info"><span class="country-flag">${cm.flag}</span><div><div class="country-name">${r.country} ${avg?`<span class="rating-tag">${avg} ⭐</span>`:''}</div><div style="display:flex;align-items:center;gap:6px;margin-top:2px;"><span class="app-avatar" style="background:${am.color};width:20px;height:20px;font-size:0.6rem;border-radius:5px;">${am.short}</span><span style="font-size:0.8rem;color:var(--gold-300);font-weight:700;">${r.app}</span></div></div></div>
+            <div style="display:flex;align-items:center;gap:6px;"><button type="button" class="fav-btn ${fav?'active':''}" onclick="toggleFavorite('${sc}','${sa}')">${fav?'⭐':'☆'}</button><span class="country-price">${formatNGN(fp)} NGN</span></div>
+          </div>
+          <div class="country-bottom">${stTag}${btn}</div>
+        </div>`;
+      }).join('');
+    }
+
+    // WALLET (REAL PAYSTACK SERVER VERIFICATION ONLY)
+    let walletFilter = 'ALL';
+    function setWalletFilter(wf) { walletFilter = wf; document.querySelectorAll('.wf-btn').forEach(b=>b.classList.toggle('active',b.getAttribute('data-wf')===wf)); renderWalletPage(); }
+    function setFundAmount(a) { $('fundAmountInput').value = a; $('walletFundError').style.display = 'none'; }
+    function validateFundAmount() {
+      const min = Number(appState.adminSettings?.minFunding ?? 500), amt = parseInt($('fundAmountInput').value, 10), err = $('walletFundError');
+      err.style.display = 'none';
+      if (isNaN(amt) || amt < min) { const m = `Minimum funding is ₦${formatNGN(min)}`; err.textContent = m; err.style.display = 'block'; showToast(m); return null; }
+      return amt;
+    }
+    function payWithPaystack() {
+      const u = getCurrentUser(); if (!u) return;
+      const amt = validateFundAmount(); if (amt === null) return;
+      if (!SERVER_CONFIG.paystackPublicKey) { showToast('PAYSTACK_PUBLIC_KEY is not configured in .env on the server.'); return; }
+      if (typeof PaystackPop === 'undefined') { showToast('Paystack script failed to load.'); return; }
+      PaystackPop.setup({
+        key: SERVER_CONFIG.paystackPublicKey, email: u.email, amount: amt * 100, currency: 'NGN', ref: 'TMSMS_' + Date.now(),
+        callback: async (response) => {
+          const vRes = await fetch('/api/paystack/verify', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({reference:response.reference}) });
+          const vData = await vRes.json();
+          if (!vRes.ok || !vData.ok) { showToast(vData.error || 'Payment verification failed'); return; }
+          u.balance = Number(u.balance) + Number(vData.amountNGN);
+          u.transactions.unshift({id:vData.reference,date:new Date().toLocaleString(),type:'Fund',description:`Paystack (${vData.reference})`,method:'Paystack',amount:'+₦'+formatNGN(vData.amountNGN),balanceAfter:u.balance,status:'Completed'});
+          saveState(); updateAuthUI(); renderWalletPage(); showToast(`₦${formatNGN(vData.amountNGN)} credited!`, true);
+        },
+        onClose: () => showToast('Paystack payment closed.')
+      }).openIframe();
+    }
+    function renderWalletPage() {
+      const u = getCurrentUser(); if (!u) return;
+      $('walletBalanceDisplay').textContent = formatNGN(u.balance); $('walletMinFundingLabel').textContent = formatNGN(appState.adminSettings.minFunding);
+      $('walletFundError').style.display = 'none'; $('myReferralCode').textContent = u.referralCode; $('myReferralCount').textContent = u.referralsCount || 0;
+      const txs = (u.transactions||[]).filter(tx => walletFilter==='ALL' || (tx.type||'Fund')===walletFilter);
+      $('txHistoryBody').innerHTML = !txs.length ? '<tr><td colspan="5" style="text-align:center;color:var(--text-muted);padding:24px;">No transactions yet.</td></tr>'
+        : txs.map(tx => `<tr><td>${tx.date}</td><td><span class="status-badge ${tx.type==='Fund'?'status-completed':tx.type==='Refund'?'status-waiting':'status-cancelled'}">${tx.type||'Fund'}</span></td><td>${tx.description}</td><td style="font-family:'JetBrains Mono',monospace;font-weight:700;color:${tx.amount.startsWith('+')?'#4ade80':'var(--gold-300)'};">${tx.amount}</td><td style="font-family:'JetBrains Mono',monospace;">${tx.balanceAfter!==undefined?'₦'+formatNGN(tx.balanceAfter):'—'}</td></tr>`).join('');
+    }
+
+    // REAL 5SIM CHECKOUT & BUY NUMBER FLOW
+    let pendingCheckout = null;
+    function openCheckout(countryName, appName, priceNum, flag, stock = 0) {
+      if (stock <= 0) { showToast('Out of Stock on 5sim.'); return; }
+      pendingCheckout = { country: countryName, app: appName, priceNum, flag, stock };
+      const u = getCurrentUser();
+      $('coApp').textContent = appName + (activePromoCode ? ` (${activePromoCode})` : '');
+      $('coCountry').textContent = `${flag} ${countryName}`;
+      $('coPrice').textContent = `${formatNGN(priceNum)} NGN`;
+      $('coStock').textContent = `In Stock: ${stock}`;
+      $('coBalance').textContent = u ? `₦${formatNGN(u.balance)}` : 'Not signed in';
+      $('coErrorBox').style.display = 'none';
+      ['coBuyBtn','coFundBtn','coSignInBtn'].forEach(id => $(id).style.display = 'none');
+      if (!u) { $('coErrorBox').textContent = 'Please sign in or create a free account to buy.'; $('coErrorBox').style.display = 'block'; $('coSignInBtn').style.display = 'inline-flex'; }
+      else if (u.balance < priceNum) { $('coErrorBox').textContent = 'Insufficient wallet balance.'; $('coErrorBox').style.display = 'block'; $('coFundBtn').style.display = 'inline-flex'; }
+      else { $('coBuyBtn').disabled = false; $('coBuyBtn').textContent = 'Buy Number Now'; $('coBuyBtn').style.display = 'inline-flex'; }
+      openModal('checkoutModal');
+    }
+
+    function buyAgainOrder(countryName, appName, fallbackPrice, flag) {
+      const live = LIVE_5SIM_LIST.find(r => r.country === countryName && r.app === appName);
+      if (!live || live.stock <= 0) { showToast(`${countryName} • ${appName} has no stock on 5sim right now.`); return; }
+      openCheckout(countryName, appName, computeFinalPrice(live.baseNgn), flag, live.stock);
+    }
+
+    async function confirmBuyNumber() {
+      const u = getCurrentUser(); if (!u || !pendingCheckout) return;
+      if (u.blocked) { $('coErrorBox').textContent = 'Your account is blocked.'; $('coErrorBox').style.display = 'block'; return; }
+      const cMeta = getCountryMeta(pendingCheckout.country), aMeta = getAppMeta(pendingCheckout.app);
+      const buyBtn = $('coBuyBtn'), errBox = $('coErrorBox');
+      errBox.style.display = 'none';
+      buyBtn.disabled = true; buyBtn.textContent = 'Buying from 5sim...';
+
+      try {
+        // 1. Call 5sim backend to buy a real number
+        const res = await fetch('/api/5sim/buy', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ country: cMeta.slug, product: aMeta.slug })
+        });
+        const data = await res.json();
+        if (!res.ok || !data.ok) {
+          errBox.textContent = data.error || '5sim could not allocate a number.';
+          errBox.style.display = 'block';
+          buyBtn.disabled = false; buyBtn.textContent = 'Buy Number Now';
+          return;
+        }
+
+        // 5. Compute real price from 5sim cost + admin profit margin/promo & verify wallet balance
+        const realPriceNgn = computeFinalPrice(data.priceNgn);
+        if (u.balance < realPriceNgn) {
+          // Cancel on 5sim since wallet cannot cover real price
+          await fetch(`/api/5sim/cancel/${encodeURIComponent(data.id)}`, { method: 'POST' }).catch(() => {});
+          errBox.textContent = `Insufficient wallet balance for real 5sim price (₦${formatNGN(realPriceNgn)}).`;
+          errBox.style.display = 'block';
+          buyBtn.style.display = 'none'; $('coFundBtn').style.display = 'inline-flex';
+          return;
+        }
+
+        // Deduct real price from user wallet balance
+        u.balance -= realPriceNgn;
+        const now = Date.now();
+        const expiresMs = data.expires ? new Date(data.expires).getTime() : (now + 20 * 60 * 1000);
+        u.transactions.unshift({ id:'TX-'+now, date:new Date(now).toLocaleString(), type:'Buy', description:`5sim: ${pendingCheckout.app} (${pendingCheckout.country})`, method:'Wallet', amount:`-₦${formatNGN(realPriceNgn)}`, balanceAfter:u.balance, status:'Completed' });
+        u.orders.unshift({ id:'ORD-'+data.id, providerOrderId:data.id, date:new Date(now).toLocaleString(), createdAt:now, expiresAt:expiresMs, app:pendingCheckout.app, country:pendingCheckout.country, flag:pendingCheckout.flag, number:data.phone, priceNum:realPriceNgn, status:'Waiting for SMS', smsCode:null, smsReceivedAt:null, rated:false });
+
+        appState.adminUnreadOrders = (appState.adminUnreadOrders || 0) + 1;
+        appState.lastOrderAlert = `New Order: ${u.email} bought ${pendingCheckout.app} ${pendingCheckout.country}`;
+        saveState(); updateAuthUI(); closeModal('checkoutModal');
+        if (isAdminAuthenticated() && appState.adminSettings.beepEnabled) playBeep(880);
+        showToast(`Real 5sim number acquired: ${data.phone}`, true);
+        navigateTo('my-numbers');
+        pollAllActiveOrders();
+      } catch (err) {
+        errBox.textContent = `Network error: ${err.message}`;
+        errBox.style.display = 'block';
+        buyBtn.disabled = false; buyBtn.textContent = 'Buy Number Now';
+      }
+    }
+
+    // REAL 5SIM POLLING EVERY 5 SECONDS FOR SMS
+    let pendingRatingOrder = null, selectedStarVal = 5;
+    function handleSmsCodeArrival(order, isCu) {
+      if (!isCu || !order.smsCode) return;
+      navigator.clipboard?.writeText(String(order.smsCode).replace(/\s+/g, '')).catch(() => {});
+      playBeep(1046);
+      showToast('Code Copied! (' + order.smsCode + ')', true);
+      if (!order.rated) setTimeout(() => openRatingModal(order), 900);
+    }
+    function openRatingModal(order) { pendingRatingOrder = order; $('ratingSubText').textContent = `${order.flag} ${order.country} • ${order.app} (${order.number})`; selectStarRating(5); openModal('ratingModal'); }
+    function selectStarRating(v) { selectedStarVal = v; document.querySelectorAll('#starPicker .star-pick-btn').forEach((b,i) => b.classList.toggle('lit', i<v)); }
+    function submitOrderRating() {
+      if (!pendingRatingOrder) { closeModal('ratingModal'); return; }
+      const c = pendingRatingOrder.country; if (!appState.countryRatings[c]) appState.countryRatings[c] = {sum:0,count:0};
+      appState.countryRatings[c].sum += selectedStarVal; appState.countryRatings[c].count += 1; pendingRatingOrder.rated = true;
+      saveState(); closeModal('ratingModal'); refreshBuyPage(); showToast(`Rated ${c} ${selectedStarVal} ⭐!`, true); pendingRatingOrder = null;
+    }
+
+    async function check5simOrder(order, manual = false) {
+      if (!order || order.status !== 'Waiting for SMS' || !order.providerOrderId) return false;
+      try {
+        const res = await fetch(`/api/5sim/check/${encodeURIComponent(order.providerOrderId)}`);
+        const data = await res.json();
+        if (!res.ok || !data.ok) {
+          if (manual) showToast(data.error || 'Error checking 5sim');
+          return false;
+        }
+        if (data.sms && data.sms.length > 0) {
+          order.smsCode = data.sms[0].code || data.sms[0].text;
+          order.smsReceivedAt = new Date().toLocaleTimeString();
+          order.status = 'Completed';
+          return true;
+        }
+        if (data.status === 'TIMEOUT' || data.status === 'CANCELED' || data.status === 'BANNED') {
+          order.status = data.status === 'CANCELED' ? 'Cancelled' : 'Expired';
+          return true;
+        }
+        if (manual) showToast(`5sim Status: ${data.status} — waiting for SMS...`);
+      } catch (err) {
+        if (manual) showToast(`Check error: ${err.message}`);
+      }
+      return false;
+    }
+
+    async function manualRefreshSms(orderId) {
+      const u = getCurrentUser(), order = u?.orders?.find(o => o.id === orderId); if (!order) return;
+      const changed = await check5simOrder(order, true);
+      if (changed) {
+        saveState(); updateAuthUI(); renderMyNumbersPage();
+        if (order.smsCode) handleSmsCodeArrival(order, true);
+      }
+    }
+
+    async function pollAllActiveOrders() {
+      const users = appState.users || [], cu = getCurrentUser();
+      let changed = false, completedForCu = null;
+      for (const u of users) {
+        for (const o of (u.orders || [])) {
+          if (o.status === 'Waiting for SMS') {
+            const c = await check5simOrder(o, false);
+            if (c) { changed = true; if (cu && u.email === cu.email && o.smsCode) completedForCu = o; }
+          }
+        }
+      }
+      if (changed) {
+        saveState(); updateAuthUI();
+        if (currentView === 'my-numbers') renderMyNumbersPage();
+        if (currentView === 'admin-dashboard' && isAdminAuthenticated()) renderAdminDashboard();
+        if (completedForCu) handleSmsCodeArrival(completedForCu, true);
+      }
+    }
+
+    // Poll 5sim every 5 seconds
+    setInterval(pollAllActiveOrders, 5000);
+
+    // Update countdown timer every 1 second
+    function fmtCd(ms) { const s = Math.max(0, Math.floor(ms/1000)); return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`; }
+    setInterval(() => {
+      const cu = getCurrentUser();
+      if (currentView === 'my-numbers' && cu) {
+        document.querySelectorAll('[data-timer-id]').forEach(el => {
+          const o = cu.orders.find(x => x.id === el.getAttribute('data-timer-id'));
+          if (o && o.status === 'Waiting for SMS') el.textContent = fmtCd(o.expiresAt - Date.now());
+        });
+      }
+    }, 1000);
+
+    async function cancelAndRefundOrder(orderId) {
+      const u = getCurrentUser(), order = u?.orders?.find(o => o.id === orderId);
+      if (!order || order.status !== 'Waiting for SMS') return;
+      if (order.smsCode) { showToast('Refund Policy: No refund after code received.'); return; }
+      try {
+        const res = await fetch(`/api/5sim/cancel/${encodeURIComponent(order.providerOrderId)}`, { method: 'POST' });
+        const d = await res.json();
+        if (!res.ok || !d.ok) { showToast(d.error || 'Could not cancel on 5sim.'); return; }
+        order.status = 'Cancelled'; u.balance += order.priceNum;
+        u.transactions.unshift({id:'TX-REF-'+Date.now(),date:new Date().toLocaleString(),type:'Refund',description:`5sim Cancelled: ${order.app} (${order.country})`,method:'5sim Cancel',amount:'+₦'+formatNGN(order.priceNum),balanceAfter:u.balance,status:'Completed'});
+        saveState(); updateAuthUI(); renderMyNumbersPage();
+        showToast(`Cancelled on 5sim & ₦${formatNGN(order.priceNum)} refunded.`, true);
+      } catch (err) { showToast(`Cancel error: ${err.message}`); }
+    }
+
+    let reportingOrderId = null;
+    function openReportModal(id) { reportingOrderId = id; $('reportOrderId').textContent = id; $('reportMessage').value = ''; openModal('reportModal'); }
+    function submitProblemReport(e) {
+      e.preventDefault();
+      const u = getCurrentUser(), msg = $('reportMessage').value.trim(); if (!u || !reportingOrderId || !msg) return;
+      const o = u.orders.find(x => x.id === reportingOrderId);
+      appState.reports.unshift({id:'REP-'+Date.now(),date:new Date().toLocaleString(),orderId:reportingOrderId,userEmail:u.email,details:o?`${o.app} • ${o.country} (${o.number})`:'Order',message:msg,status:'Open'});
+      saveState(); closeModal('reportModal'); showToast('Report sent to Admin.', true);
+    }
+
+    function renderMyNumbersPage() {
+      const u = getCurrentUser(); if (!u) return;
+      $('myNumbersBalance').textContent = formatNGN(u.balance);
+      const activeOrders = u.orders.filter(o => o.status === 'Waiting for SMS' || (o.status === 'Completed' && o.smsCode));
+      $('activeOrdersContainer').innerHTML = !activeOrders.length
+        ? `<div class="panel-card" style="text-align:center;padding:34px 20px;"><div style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">No Active Numbers</div><p style="font-size:0.88rem;color:var(--text-secondary);margin-bottom:18px;">Select a live country &amp; app to get a real 5sim number.</p><button class="btn-gold" onclick="navigateTo('home','countries')">Browse Live Numbers</button></div>`
+        : activeOrders.map(order => {
+            const meta = getAppMeta(order.app), isW = order.status === 'Waiting for SMS', rem = fmtCd(order.expiresAt - Date.now());
+            const inbox = order.smsCode
+              ? `<div class="code-box"><div><div class="code-text">YOUR CODE: ${order.smsCode}</div><div style="font-size:0.78rem;color:#bbf7d0;margin-top:4px;">Received at ${order.smsReceivedAt}</div></div><button class="copy-mini" onclick="copyText('${String(order.smsCode).replace(/\s+/g,'')}',this,'Code Copied!')">Copy Code</button></div>`
+              : `<div class="sms-waiting"><span>Polling 5sim every 5 seconds for <strong>${order.app}</strong> SMS...</span><button class="btn-outline btn-sm" onclick="manualRefreshSms('${order.id}')">Refresh Now</button></div>`;
+            return `<div class="active-order-card"><div class="order-top"><div class="example-app"><div class="app-avatar" style="background:${meta.color};width:46px;height:46px;font-size:1rem;">${meta.short}</div><div><div class="example-title">${order.app} <span class="uk-tag">${order.flag} ${order.country}</span></div><div class="order-number-display">${order.number}</div></div></div><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">${isW?`<span class="wait-pill"><span class="live-dot"></span> Waiting for SMS</span><span class="timer-badge" data-timer-id="${order.id}">${rem}</span>`:`<span class="live-pill"><span class="live-dot"></span> Completed</span>`}</div></div><div class="order-actions"><button class="btn-outline btn-sm" onclick="copyText('${order.number}',this)">Copy Number</button>${isW?`<button class="btn-danger-outline" onclick="cancelAndRefundOrder('${order.id}')">Cancel &amp; Refund</button>`:''}<button class="btn-danger-outline" onclick="openReportModal('${order.id}')">Report Problem</button></div><div class="sms-inbox-box"><div class="sms-inbox-head"><span style="font-size:0.84rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold-300);">Real-Time SMS Inbox</span><button class="copy-mini" style="background:rgba(212,175,55,0.12);border-color:var(--gold-border);color:var(--gold-300);" onclick="manualRefreshSms('${order.id}')">Check Now</button></div>${inbox}</div></div>`;
+          }).join('');
+
+      $('orderHistoryBody').innerHTML = !u.orders.length ? '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:24px;">No orders yet.</td></tr>'
+        : u.orders.map(o => {
+            const cls = o.status==='Completed'?'status-completed':o.status==='Cancelled'?'status-cancelled':o.status==='Expired'?'status-expired':'status-waiting', sc = o.country.replace(/'/g,"\\'"), sa = o.app.replace(/'/g,"\\'");
+            return `<tr><td>${o.date}</td><td><strong>${o.app}</strong></td><td>${o.flag} ${o.country}</td><td style="font-family:'JetBrains Mono',monospace;">${o.number}</td><td style="font-family:'JetBrains Mono',monospace;color:var(--gold-300);font-weight:700;">${formatNGN(o.priceNum)} NGN</td><td><span class="status-badge ${cls}">${o.status}</span></td><td><div style="display:flex;gap:6px;flex-wrap:wrap;"><button class="btn-gold btn-sm" onclick="buyAgainOrder('${sc}','${sa}',${o.priceNum},'${o.flag}')">Buy Again</button><button class="btn-outline btn-sm" onclick="openReportModal('${o.id}')">Report</button></div></td></tr>`;
+          }).join('');
+    }
+
+    // ADMIN DASHBOARD
+    let currentAdminTab = 'users', adminTargetUserEmail = null;
+    function setAdminTab(t) { currentAdminTab = t; document.querySelectorAll('.admin-tab-btn').forEach(b=>b.classList.toggle('active',b.getAttribute('data-atab')===t)); document.querySelectorAll('.admin-tab-panel').forEach(p=>p.classList.remove('active')); $('atab-'+t).classList.add('active'); }
+    function ackAdminNotifications() { appState.adminUnreadOrders = 0; saveState(); renderAdminDashboard(); setAdminTab('live'); }
+    function toggleAdminBeep() { appState.adminSettings.beepEnabled = !appState.adminSettings.beepEnabled; saveState(); renderAdminDashboard(); if (appState.adminSettings.beepEnabled) playBeep(880); }
+    function exportOrdersCSV() {
+      if (!isAdminAuthenticated()) return;
+      const rows = [['Date','User Email','App','Country','Number','Price_NGN','Status','SMS_Code']];
+      (appState.users||[]).forEach(u => (u.orders||[]).forEach(o => rows.push([o.date,u.email,o.app,o.country,o.number,o.priceNum,o.status,o.smsCode||''])));
+      const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n')],{type:'text/csv'}));
+      a.download = `tmsmshub-orders-${new Date().toISOString().slice(0,10)}.csv`; a.click();
+    }
+    function toggleBlockUser(em) { const u = appState.users.find(x=>x.email.toLowerCase()===em.toLowerCase()); if (!u) return; u.blocked = !u.blocked; if (u.blocked && appState.currentUserEmail?.toLowerCase()===u.email.toLowerCase()) appState.currentUserEmail=null; saveState(); updateAuthUI(); renderAdminDashboard(); }
+    function adminViewCode(em, id) { const u = appState.users.find(x=>x.email.toLowerCase()===em.toLowerCase()), o = u?.orders?.find(x=>x.id===id); if (o) showToast(o.smsCode?`Code: ${o.smsCode}`:'Waiting for SMS'); }
+    function saveGlobalSettings() { const m = parseInt($('adminMinFundingInput').value,10); if (!isNaN(m)&&m>=0) { appState.adminSettings.minFunding=m; saveState(); showToast(`Saved min funding: ₦${formatNGN(m)}`, true); } }
+    function saveProfitMargin() { const mt=$('adminMarginType').value, mv=parseFloat($('adminMarginValue').value); if (!isNaN(mv)&&mv>=0) { appState.adminSettings.marginType=mt; appState.adminSettings.marginValue=mv; saveState(); refreshBuyPage(); showToast('Margin saved!', true); } }
+    function submitAdminNewPromo(e) { e.preventDefault(); const c=$('newPromoCode').value.trim().toUpperCase(), d=parseInt($('newPromoDiscount').value,10); if (!c||isNaN(d)) return; appState.promoCodes.push({code:c,discountPct:d}); saveState(); $('newPromoCode').value=''; renderAdminDashboard(); }
+    function deletePromoCode(c) { appState.promoCodes = appState.promoCodes.filter(p=>p.code!==c); saveState(); renderAdminDashboard(); }
+    function resolveReport(id) { const r = appState.reports.find(x=>x.id===id); if (r) { r.status='Resolved'; saveState(); renderAdminDashboard(); } }
+    function openAdminBalanceModal(em) { adminTargetUserEmail=em; $('adminTargetEmail').textContent=em; $('adminAddAmount').value=5000; openModal('adminBalanceModal'); }
+    function submitAdminAddBalance(e) { e.preventDefault(); const amt=parseInt($('adminAddAmount').value,10), u=appState.users.find(x=>x.email.toLowerCase()===adminTargetUserEmail.toLowerCase()); if (!u||!amt||amt<=0) return; u.balance+=amt; u.transactions.unshift({id:'TX-ADM-'+Date.now(),date:new Date().toLocaleString(),type:'Fund',description:'Admin Manual Credit',method:'Admin',amount:'+₦'+formatNGN(amt),balanceAfter:u.balance,status:'Completed'}); saveState(); updateAuthUI(); closeModal('adminBalanceModal'); renderAdminDashboard(); }
+    function adminMarkCompleted(em, id) { const u=appState.users.find(x=>x.email.toLowerCase()===em.toLowerCase()), o=u?.orders?.find(x=>x.id===id); if (!o) return; o.status='Completed'; saveState(); renderAdminDashboard(); }
+    function adminRefundOrder(em, id) { const u=appState.users.find(x=>x.email.toLowerCase()===em.toLowerCase()), o=u?.orders?.find(x=>x.id===id); if (!o||o.status==='Cancelled') return; o.status='Cancelled'; u.balance+=Number(o.priceNum||0); u.transactions.unshift({id:'TX-AR-'+Date.now(),date:new Date().toLocaleString(),type:'Refund',description:`Admin Refund: ${o.app}`,method:'Admin',amount:'+₦'+formatNGN(o.priceNum),balanceAfter:u.balance,status:'Completed'}); saveState(); updateAuthUI(); renderAdminDashboard(); }
+
+    async function renderAdminDashboard() {
+      if (!isAdminAuthenticated()) { navigateTo('admin-login'); return; }
+      fetch('/api/5sim/profile').then(r=>r.json()).then(d => { $('admin5simBalance').textContent = d.ok ? `${d.balance} RUB (${d.email})` : (d.error || 'Error'); }).catch(() => { $('admin5simBalance').textContent = 'Offline'; });
+      const ur = appState.adminUnreadOrders||0, bc = $('adminBellCount'); bc.textContent = ur; bc.style.display = ur>0?'flex':'none';
+      $('adminBeepToggleBtn').textContent = `Sound Beep: ${appState.adminSettings.beepEnabled?'ON':'OFF'}`;
+      $('adminMinFundingInput').value = appState.adminSettings.minFunding; $('adminMarginType').value = appState.adminSettings.marginType; $('adminMarginValue').value = appState.adminSettings.marginValue;
+
+      const users = appState.users||[], today = new Date().toDateString(); let allOrders = [], allTx = [], oT = 0, rT = 0, rA = 0;
+      users.forEach(u => {
+        (u.orders||[]).forEach(o => { allOrders.push({...o,userEmail:u.email}); const isT = new Date(o.createdAt||Date.now()).toDateString()===today; if (isT) oT++; if (o.status!=='Cancelled') { rA+=Number(o.priceNum||0); if (isT) rT+=Number(o.priceNum||0); } });
+        (u.transactions||[]).forEach(tx => allTx.push({...tx,userEmail:u.email}));
+      });
+      allOrders.sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
+      $('adminTotalUsers').textContent = users.length; $('adminOrdersToday').textContent = oT; $('adminRevenueToday').textContent = '₦'+formatNGN(rT); $('adminTotalRevenue').textContent = '₦'+formatNGN(rA);
+
+      $('adminUsersBody').innerHTML = !users.length ? '<tr><td colspan="5" style="text-align:center;color:var(--text-muted);padding:24px;">No users yet.</td></tr>'
+        : users.map(u => { const se=u.email.replace(/'/g,"\\'"); return `<tr><td><strong>${u.name}</strong><div style="font-size:0.78rem;color:var(--text-secondary);">${u.email}</div></td><td style="font-family:'JetBrains Mono',monospace;color:var(--gold-300);font-weight:700;">₦${formatNGN(u.balance)}</td><td>${(u.orders||[]).length}</td><td><span class="status-badge ${u.blocked?'status-cancelled':'status-completed'}">${u.blocked?'Blocked':'Active'}</span></td><td><div style="display:flex;gap:6px;"><button class="btn-gold btn-sm" onclick="openAdminBalanceModal('${se}')">+ Add Balance</button><button class="${u.blocked?'btn-green-outline':'btn-danger-outline'} btn-sm" onclick="toggleBlockUser('${se}')">${u.blocked?'Unblock':'Block'}</button></div></td></tr>`; }).join('');
+
+      const live = allOrders.filter(o=>o.status==='Waiting for SMS');
+      $('adminLiveOrdersBody').innerHTML = !live.length ? '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:24px;">No live orders.</td></tr>'
+        : live.map(o => { const se=o.userEmail.replace(/'/g,"\\'"); return `<tr><td>${o.date}</td><td>${o.userEmail}</td><td><strong>${o.app}</strong> (${o.country})</td><td style="font-family:'JetBrains Mono',monospace;">${o.number}</td><td><span class="status-badge status-waiting">${o.status}</span></td><td><div style="display:flex;gap:6px;"><button class="btn-outline btn-sm" onclick="adminViewCode('${se}','${o.id}')">View Code</button><button class="btn-danger-outline btn-sm" onclick="adminRefundOrder('${se}','${o.id}')">Refund</button></div></td></tr>`; }).join('');
+
+      const low = LIVE_5SIM_LIST.filter(r => r.stock < 5); $('adminLowStockBadge').textContent = low.length?`(${low.length})`:'';
+      $('adminLowStockBody').innerHTML = !low.length ? '<tr><td colspan="4" style="text-align:center;color:#4ade80;padding:24px;">All 5sim stock healthy.</td></tr>'
+        : low.map(r => `<tr><td>${getCountryMeta(r.country).flag} ${r.country}</td><td>${r.app}</td><td><span class="status-badge status-cancelled">Stock: ${r.stock}</span></td><td>${formatNGN(computeFinalPrice(r.baseNgn))} NGN</td></tr>`).join('');
+
+      const oq = ($('adminOrderSearch')?.value||'').trim().toLowerCase(), fo = allOrders.filter(o=>!oq||o.userEmail.toLowerCase().includes(oq)||o.number.toLowerCase().includes(oq));
+      $('adminOrdersBody').innerHTML = !fo.length ? '<tr><td colspan="9" style="text-align:center;color:var(--text-muted);padding:24px;">No orders.</td></tr>'
+        : fo.map(o => { const se=o.userEmail.replace(/'/g,"\\'"); return `<tr><td>${o.date}</td><td>${o.userEmail}</td><td><strong>${o.app}</strong></td><td>${o.flag||''} ${o.country}</td><td style="font-family:'JetBrains Mono',monospace;">${o.number}</td><td>₦${formatNGN(o.priceNum)}</td><td><span class="status-badge ${o.status==='Completed'?'status-completed':o.status==='Cancelled'?'status-cancelled':'status-waiting'}">${o.status}</span></td><td style="font-family:'JetBrains Mono',monospace;color:#4ade80;">${o.smsCode||'—'}</td><td><div style="display:flex;gap:6px;">${o.status!=='Completed'?`<button class="btn-green-outline" onclick="adminMarkCompleted('${se}','${o.id}')">Complete</button>`:''}${o.status!=='Cancelled'?`<button class="btn-danger-outline btn-sm" onclick="adminRefundOrder('${se}','${o.id}')">Refund</button>`:''}</div></td></tr>`; }).join('');
+
+      $('adminAllTxBody').innerHTML = !allTx.length ? '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:24px;">No transactions.</td></tr>'
+        : allTx.map(tx=>`<tr><td>${tx.date}</td><td>${tx.userEmail}</td><td>${tx.type||'Fund'}</td><td>${tx.description}</td><td style="font-family:'JetBrains Mono',monospace;">${tx.amount}</td><td>${tx.balanceAfter!==undefined?'₦'+formatNGN(tx.balanceAfter):'—'}</td></tr>`).join('');
+
+      $('adminPromosBody').innerHTML = !(appState.promoCodes||[]).length ? '<tr><td colspan="3" style="text-align:center;color:var(--text-muted);padding:24px;">No promos yet.</td></tr>'
+        : appState.promoCodes.map(p=>`<tr><td><strong>${p.code}</strong></td><td>${p.discountPct}% OFF</td><td><button class="btn-danger-outline btn-sm" onclick="deletePromoCode('${p.code}')">Delete</button></td></tr>`).join('');
+
+      const openR = (appState.reports||[]).filter(r=>r.status!=='Resolved').length; $('adminReportsBadge').textContent = openR?`(${openR})`:'';
+      $('adminReportsBody').innerHTML = !(appState.reports||[]).length ? '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:24px;">No reports.</td></tr>'
+        : appState.reports.map(r=>`<tr><td>${r.date}</td><td>${r.orderId}</td><td>${r.userEmail}</td><td>${r.details}</td><td>${r.message}</td><td>${r.status}</td><td>${r.status!=='Resolved'?`<button class="btn-green-outline" onclick="resolveReport('${r.id}')">Resolve</button>`:'—'}</td></tr>`).join('');
+    }
+
+    function openPolicyModal(type) {
+      $('policyTitle').textContent = type==='terms'?'Terms of Service':'Refund Policy';
+      $('policyBody').innerHTML = type==='terms' ? '<p>Numbers are leased from 5sim on a single-activation basis for lawful verification.</p>' : '<p style="color:#fca5a5;font-weight:700;">No refund after code received.</p><p>If no code arrives, click Cancel &amp; Refund to cancel on 5sim and return NGN to your wallet.</p>';
+      openModal('policyModal');
+    }
+
+    renderApps();
+    upda
